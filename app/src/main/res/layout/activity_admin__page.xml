@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradiant"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Admin.Admin_Activity">
+
+    <Button
+        android:id="@+id/admin_canteen_Id"
+        style="@style/design_1"
+        android:background="@drawable/custom_button"
+        android:text="@string/picture_canteen"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/admin_food_list_Id"
+        style="@style/design_1"
+        android:background="@drawable/custom_button"
+        android:text="@string/food_canteen"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/admin_available_food_list_Id"
+        style="@style/design_1"
+        android:background="@drawable/custom_button"
+        android:text="Available Food List"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/admin_check_Feedback_Id"
+        style="@style/design_1"
+        android:background="@drawable/custom_button"
+        android:text="Feedback From User"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/admin_check_wishlist_Id"
+        style="@style/design_1"
+        android:background="@drawable/custom_button"
+        android:text="Wishlist From User"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/admin_logout_Id"
+        style="@style/design_1"
+        android:background="@drawable/custom_button"
+        android:text="Logout"
+        android:textAllCaps="false" />
+
+</LinearLayout>

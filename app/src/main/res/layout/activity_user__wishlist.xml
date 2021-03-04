@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_gradiant"
+    tools:context=".User.User_Wishlist">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Wish List for Admin"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:background="@color/orange" />
+
+
+    <EditText
+        android:id="@+id/wishlist_EditText_Id"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/teal_200"
+        android:hint="Write something you want in food menu and price...!"
+        android:textAlignment="textStart"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/wishlist_submit_button_Id"
+        style="@style/design_1"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_button"
+        android:text="Submit" />
+
+
+</LinearLayout>

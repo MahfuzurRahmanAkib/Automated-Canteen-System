@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradiant"
+    android:orientation="vertical"
+    tools:context=".Admin.Admin_Login">
+
+    <EditText
+        android:id="@+id/admin_Username_Id"
+        style="@style/design_1"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/custom_edit_text"
+        android:drawableLeft="@drawable/ic_email_24"
+        android:drawablePadding="15dp"
+        android:hint="@string/userEmail"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/admin_password_Id"
+        style="@style/design_1"
+        android:background="@drawable/custom_edit_text"
+        android:drawableLeft="@drawable/ic_password"
+        android:drawablePadding="15dp"
+        android:hint="@string/password"
+        android:textColorHint="@color/black" />
+
+    <Button
+        android:id="@+id/admin_login_Id"
+        style="@style/design_1"
+        android:background="@drawable/custom_button"
+        android:text="Log In"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:id="@+id/admin_login_textView_Id"
+        style="@style/design_1"
+        android:layout_gravity="center"
+        android:fontFamily="casual"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        android:textStyle="normal" />
+
+    <ProgressBar
+        android:id="@+id/progressbar_Id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</LinearLayout>

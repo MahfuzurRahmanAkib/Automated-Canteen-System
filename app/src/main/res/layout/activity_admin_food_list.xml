@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradiant"
+    android:orientation="vertical"
+    tools:context=".Admin.Admin_foodList">
+
+    <EditText
+        android:id="@+id/regular_food_Id"
+        style="@style/design_1"
+        android:background="@drawable/custom_edit_text"
+        android:drawablePadding="15dp"
+        android:layout_marginTop="100dp"
+        android:hint="Food Name"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/regular_price_Id"
+        style="@style/design_1"
+        android:background="@drawable/custom_edit_text"
+        android:drawablePadding="15dp"
+        android:hint="Price"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/regular_description_Id"
+        style="@style/design_1"
+        android:background="@drawable/custom_edit_text"
+        android:drawablePadding="15dp"
+        android:hint="Short Description"
+        android:textColorHint="@color/black" />
+
+    <Button
+        android:id="@+id/regular_save_Id"
+        style="@style/design_1"
+        android:background="@drawable/custom_button"
+        android:text="Save" />
+
+
+</LinearLayout>

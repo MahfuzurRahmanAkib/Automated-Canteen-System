@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradiant"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".User.User_Activity">
+
+    <Button
+        android:id="@+id/user_canteen_Id"
+        style="@style/design_1"
+        android:background="@drawable/custom_button"
+        android:text="@string/picture_canteen"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/user_foodlist_Id"
+        style="@style/design_1"
+        android:background="@drawable/custom_button"
+        android:text="@string/food_canteen"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/user_available_foodlist_Id"
+        style="@style/design_1"
+        android:background="@drawable/custom_button"
+        android:text="Available Food"
+        android:textAllCaps="false" />
+
+</LinearLayout>

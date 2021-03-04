@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Student Canteen</string>
+    <string name="userEmail">Email</string>
+    <string name="password">Password</string>
+    <string name="loginUser">Log In As User</string>
+    <string name="LoginAdmin">Log In As Admin</string>
+    <string name="register">Register</string>
+    <string name="click">Click Here To</string>
+    <string name="create">Create</string>
+    <string name="phone">Phone Number</string>
+    <string name="email">E-Mail</string>
+    <string name="login">Log In</string>
+    <string name="reset_password">Forgot Password ?</string>
+    <string name="picture_canteen">Pictures Of Canteen</string>
+    <string name="food_canteen">Food List</string>
+    <string name="AboutUs_1">About This App</string>
+    <string name="AboutUs_2">It is a application, where user can check the availability of food , see the interior of canteen and finally give some feedback to Admin.</string>
+    <string name="AboutUs_3">This App Is Developed By </string>
+    <string name="AboutUs_4">Mahfuzur Rahman,
+        Atikur Rahman Niyam,
+        Samsad Zaman Samanta.
+    </string>
+
+
+</resources>
