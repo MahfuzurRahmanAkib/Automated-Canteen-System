@@ -18,22 +18,17 @@
 
     <View
         android:layout_width="wrap_content"
-        android:layout_height="2dp"
+        android:layout_height="5dp"
         android:background="@color/orange" />
 
 
     <EditText
         android:id="@+id/feedback_EditText_Id"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="10dp"
-        android:background="@color/teal_200"
-        android:hint="Write something About Our Services and Food Quality"
+        style="@style/design_2"
+        android:background="@drawable/custom_edit_text"
+        android:hint="Write something about our services and food quality"
         android:textAlignment="textStart"
-        android:textSize="25dp" />
+        android:textSize="20dp" />
 
     <Button
         android:id="@+id/feedback_submit_button_Id"

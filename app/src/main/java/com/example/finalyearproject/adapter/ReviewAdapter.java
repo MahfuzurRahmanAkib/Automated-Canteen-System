@@ -41,15 +41,15 @@ public class ReviewAdapter extends RecyclerView.Adapter<ReviewAdapter.MyViewHold
         ReviewModel reviewModel = rList.get(position);
 
         holder.text.setText(reviewModel.getText());
-        holder.deleteButton.setOnClickListener(new View.OnClickListener() {
+       /* holder.deleteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-              /*  DatabaseReference databaseReference;
+               DatabaseReference databaseReference;
                 databaseReference = FirebaseDatabase.getInstance().getReference();//.child(rlist.getId());
-                databaseReference.removeValue();*/
+                databaseReference.removeValue();
                 Toast.makeText(context,"A review has been deleted..!!",Toast.LENGTH_SHORT).show();
             }
-        });
+        });*/
     }
 
     @Override
@@ -65,7 +65,7 @@ public class ReviewAdapter extends RecyclerView.Adapter<ReviewAdapter.MyViewHold
             super(itemView);
 
             text = itemView.findViewById(R.id.review_text_Id);
-            deleteButton = itemView.findViewById(R.id.review_delete_Id);
+          deleteButton = itemView.findViewById(R.id.review_delete_Id);
         }
     }
 }

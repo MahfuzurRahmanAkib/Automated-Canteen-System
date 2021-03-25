@@ -22,8 +22,7 @@ import java.util.HashMap;
 public class FeedBack extends AppCompatActivity implements View.OnClickListener {
     EditText feedback_Username, feedback_EditText;
     Button feedback_Submit_Button;
-
-
+    
     private FirebaseDatabase db = FirebaseDatabase.getInstance();
     private DatabaseReference root = db.getReference().child("User_review");
 
@@ -45,9 +44,7 @@ public class FeedBack extends AppCompatActivity implements View.OnClickListener 
 
     @Override
     public void onClick(View v) {
-
         String text = feedback_EditText.getText().toString().trim();
-
 
         if (text.isEmpty()) {
             feedback_EditText.setError("Enter review");

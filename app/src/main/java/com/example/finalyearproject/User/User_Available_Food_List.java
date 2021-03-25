@@ -22,7 +22,7 @@ public class User_Available_Food_List extends AppCompatActivity {
     private RecyclerView recyclerView;
 
     private FirebaseDatabase db = FirebaseDatabase.getInstance();
-    private DatabaseReference root = db.getReference().child("Regular_Food");
+    private DatabaseReference root = db.getReference().child("Available_Food");
 
     private AvailableFoodListAdapter adapter;
     private ArrayList<AvailableFoodModel> list;

@@ -8,14 +8,36 @@
     android:orientation="vertical"
     tools:context=".Admin.Admin_foodList">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:drawablePadding="15dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Food Name : "
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
     <EditText
         android:id="@+id/regular_food_Id"
         style="@style/design_1"
         android:background="@drawable/custom_edit_text"
         android:drawablePadding="15dp"
-        android:layout_marginTop="100dp"
         android:hint="Food Name"
         android:textColorHint="@color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:drawablePadding="15dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Food Price : "
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/regular_price_Id"
@@ -25,6 +47,17 @@
         android:hint="Price"
         android:textColorHint="@color/black" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:drawablePadding="15dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Food Description : "
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
     <EditText
         android:id="@+id/regular_description_Id"
         style="@style/design_1"
@@ -32,6 +65,7 @@
         android:drawablePadding="15dp"
         android:hint="Short Description"
         android:textColorHint="@color/black" />
+
 
     <Button
         android:id="@+id/regular_save_Id"

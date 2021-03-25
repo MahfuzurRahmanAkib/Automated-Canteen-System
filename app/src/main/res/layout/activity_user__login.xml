@@ -8,16 +8,37 @@
     android:orientation="vertical"
     tools:context=".User.User_Login">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:drawablePadding="15dp"
+        android:fontFamily="sans-serif-light"
+        android:text="User Name : "
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/user_username_Id"
         style="@style/design_1"
-        android:layout_marginTop="100dp"
         android:background="@drawable/custom_edit_text"
         android:drawableLeft="@drawable/ic_email_24"
         android:drawablePadding="15dp"
         android:hint="@string/userEmail"
         android:textColorHint="@color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:drawablePadding="15dp"
+        android:fontFamily="sans-serif-light"
+        android:text="User Password : "
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/user_password_Id"
@@ -43,7 +64,8 @@
         android:gravity="center"
         android:text="@string/reset_password"
         android:textColor="@color/black"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <ProgressBar
         android:id="@+id/progressbar_Id"

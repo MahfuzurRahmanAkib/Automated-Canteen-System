@@ -17,13 +17,14 @@ import com.example.finalyearproject.R;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class User_Activity extends AppCompatActivity implements View.OnClickListener {
-    private FirebaseAuth mAuth;
     Button user_canteen, user_food_List, user_Available_Food_List;
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_);
+
         this.setTitle("User Activity");
 
         mAuth = FirebaseAuth.getInstance();
@@ -61,6 +62,7 @@ public class User_Activity extends AppCompatActivity implements View.OnClickList
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(intent);
+
         } else if (item.getItemId() == R.id.feedback_menu_id) {
             Intent intent = new Intent(getApplicationContext(), FeedBack.class);
             startActivity(intent);

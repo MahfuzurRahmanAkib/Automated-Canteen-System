@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/background_gradiant"
+    android:orientation="vertical"
     tools:context=".User.User_Wishlist">
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,22 +18,19 @@
 
     <View
         android:layout_width="wrap_content"
-        android:layout_height="2dp"
+        android:layout_height="5dp"
         android:background="@color/orange" />
 
 
     <EditText
         android:id="@+id/wishlist_EditText_Id"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="10dp"
-        android:background="@color/teal_200"
+        style="@style/design_2"
+        android:background="@drawable/custom_edit_text"
         android:hint="Write something you want in food menu and price...!"
+        android:padding="15dp"
         android:textAlignment="textStart"
-        android:textSize="25dp" />
+        android:textColor="@color/black"
+        android:textSize="20dp" />
 
     <Button
         android:id="@+id/wishlist_submit_button_Id"
@@ -40,6 +38,4 @@
         android:layout_marginTop="10dp"
         android:background="@drawable/custom_button"
         android:text="Submit" />
-
-
 </LinearLayout>

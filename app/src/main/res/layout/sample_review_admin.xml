@@ -13,6 +13,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="140dp"
+        android:background="@color/orange"
         android:orientation="vertical">
 
         <LinearLayout
@@ -26,7 +27,7 @@
                 android:padding="5dp"
                 android:text="User Review : "
                 android:textColor="@color/black"
-                android:textSize="15sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -44,34 +45,12 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="3dp"
-                android:layout_gravity="bottom"
-                android:layout_marginBottom="10dp"
-                android:background="@color/teal_200" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="bottom"
-            android:orientation="horizontal">
-
             <Button
                 android:id="@+id/review_delete_Id"
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:layout_marginLeft="100dp"
-                android:layout_marginRight="100dp"
-                android:background="@color/teal_200"
-                android:gravity="center"
-                android:text="Delete"
-                android:textAllCaps="true"
-                android:textColor="@color/purple_500"
-                android:textSize="15sp"
-                android:textStyle="bold" />
+                style="@style/design_1"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_button"
+                android:text="Delete" />
         </LinearLayout>
     </LinearLayout>
 

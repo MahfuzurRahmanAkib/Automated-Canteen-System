@@ -48,8 +48,7 @@
             android:name=".User.Forgot_Password"
             android:parentActivityName=".User.User_Login" />
         <activity
-            android:name=".User.User_Activity"
-            android:parentActivityName=".MainActivity" />
+            android:name=".User.User_Activity"/>
         <activity android:name=".Admin.Admin_Activity" />
         <activity
             android:name=".Admin.Admin_Login"

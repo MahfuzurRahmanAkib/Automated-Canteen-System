@@ -145,7 +145,6 @@ public class Admin_Picture extends AppCompatActivity implements View.OnClickList
             });
         }
     }
-
 }
 
 
