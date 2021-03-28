@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background_gradiant"
     android:orientation="vertical"
+    android:weightSum="20"
     tools:context=".Admin.Admin_Available_Food_List">
 
     <TextView
@@ -23,6 +24,7 @@
     <EditText
         android:id="@+id/available_canteen_Id"
         style="@style/design_1"
+        android:layout_weight="1"
         android:background="@drawable/custom_edit_text"
         android:drawablePadding="15dp"
         android:hint="Canteen Name"
@@ -42,6 +44,7 @@
     <EditText
         android:id="@+id/available_food_name_Id"
         style="@style/design_1"
+        android:layout_weight="1"
         android:background="@drawable/custom_edit_text"
         android:drawablePadding="15dp"
         android:hint="Food Name"
@@ -61,6 +64,7 @@
     <EditText
         android:id="@+id/available_price_Id"
         style="@style/design_1"
+        android:layout_weight="1"
         android:background="@drawable/custom_edit_text"
         android:drawablePadding="15dp"
         android:hint="Price"

@@ -19,6 +19,8 @@
     <View
         android:layout_width="wrap_content"
         android:layout_height="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
         android:background="@color/orange" />
 
 
@@ -26,6 +28,7 @@
         android:id="@+id/feedback_EditText_Id"
         style="@style/design_2"
         android:background="@drawable/custom_edit_text"
+        android:gravity="top"
         android:hint="Write something about our services and food quality"
         android:textAlignment="textStart"
         android:textSize="20dp" />

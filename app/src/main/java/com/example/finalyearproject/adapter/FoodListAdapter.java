@@ -35,9 +35,9 @@ public class FoodListAdapter extends RecyclerView.Adapter<FoodListAdapter.MyView
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         FoodModel model = fList.get(position);
 
-        holder.name.setText(model.getName());
-        holder.price.setText(model.getPrice());
-        holder.description.setText(model.getDescription());
+        holder.name.setText(model.getRegularName());
+        holder.price.setText(model.getRegularPrice());
+        holder.description.setText(model.getRegularDescription());
     }
 
     @Override

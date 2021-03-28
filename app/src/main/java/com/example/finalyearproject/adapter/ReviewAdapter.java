@@ -59,13 +59,11 @@ public class ReviewAdapter extends RecyclerView.Adapter<ReviewAdapter.MyViewHold
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
         TextView email, text;
-        Button deleteButton;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
             text = itemView.findViewById(R.id.review_text_Id);
-          deleteButton = itemView.findViewById(R.id.review_delete_Id);
         }
     }
 }

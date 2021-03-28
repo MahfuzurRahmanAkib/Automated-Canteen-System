@@ -20,6 +20,7 @@
         android:id="@+id/imageNameEditText"
         style="@style/design_1"
         android:layout_width="match_parent"
+        android:layout_weight="0.1"
         android:background="@drawable/custom_edit_text"
         android:drawableLeft="@drawable/image_drawable"
         android:drawablePadding="10dp"
@@ -32,9 +33,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:background="@drawable/image_drawable"
         android:layout_margin="5dp"
-        android:layout_weight="2" />
+        android:layout_weight="2"
+        android:background="@drawable/image_drawable" />
 
     <Button
         android:id="@+id/saveImage_Id"

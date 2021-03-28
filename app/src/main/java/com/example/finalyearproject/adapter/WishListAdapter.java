@@ -35,7 +35,7 @@ public class WishListAdapter extends RecyclerView.Adapter<WishListAdapter.MyView
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         WishListModel model = w_Model.get(position);
 
-        holder.text.setText(model.getWishText());
+        holder.text.setText(model.getText());
 
     }
 

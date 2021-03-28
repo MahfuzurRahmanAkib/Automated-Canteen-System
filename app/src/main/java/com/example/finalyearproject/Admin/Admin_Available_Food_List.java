@@ -65,9 +65,9 @@ public class Admin_Available_Food_List extends AppCompatActivity implements View
 
         HashMap<String, String> available_Food_Map = new HashMap<>();
 
-        available_Food_Map.put("Canteen Name", availableCanteen);
-        available_Food_Map.put("Name", availableName);
-        available_Food_Map.put("Price", availablePrice);
+        available_Food_Map.put("canteen_Name", availableCanteen);
+        available_Food_Map.put("food_name", availableName);
+        available_Food_Map.put("price", availablePrice);
 
 
         root.push().setValue(available_Food_Map).addOnCompleteListener(new OnCompleteListener<Void>() {

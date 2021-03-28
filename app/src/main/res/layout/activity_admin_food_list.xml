@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background_gradiant"
     android:orientation="vertical"
+    android:weightSum="20"
     tools:context=".Admin.Admin_foodList">
 
     <TextView
@@ -14,6 +15,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="50dp"
         android:drawablePadding="15dp"
+
         android:fontFamily="sans-serif-light"
         android:text="Food Name : "
         android:textColor="@color/black"
@@ -23,6 +25,7 @@
     <EditText
         android:id="@+id/regular_food_Id"
         style="@style/design_1"
+        android:layout_weight="1"
         android:background="@drawable/custom_edit_text"
         android:drawablePadding="15dp"
         android:hint="Food Name"
@@ -42,6 +45,7 @@
     <EditText
         android:id="@+id/regular_price_Id"
         style="@style/design_1"
+        android:layout_weight="1"
         android:background="@drawable/custom_edit_text"
         android:drawablePadding="15dp"
         android:hint="Price"
@@ -61,6 +65,7 @@
     <EditText
         android:id="@+id/regular_description_Id"
         style="@style/design_1"
+        android:layout_weight="1"
         android:background="@drawable/custom_edit_text"
         android:drawablePadding="15dp"
         android:hint="Short Description"

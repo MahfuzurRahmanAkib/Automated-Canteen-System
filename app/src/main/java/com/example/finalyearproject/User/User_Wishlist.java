@@ -50,11 +50,11 @@ public class User_Wishlist extends AppCompatActivity {
                     return;
                 }
 
-                HashMap<String, String> review_Map = new HashMap<>();
+                HashMap<String, String> wish_Map = new HashMap<>();
 
-                review_Map.put("text", text);
+                wish_Map.put("text", text);
 
-                root.push().setValue(review_Map).addOnCompleteListener(new OnCompleteListener<Void>() {
+                root.push().setValue(wish_Map).addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
                         if (task.isSuccessful()) {

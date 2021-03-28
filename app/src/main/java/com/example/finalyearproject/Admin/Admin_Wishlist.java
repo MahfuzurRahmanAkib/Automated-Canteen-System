@@ -6,6 +6,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Toast;
 
 import com.example.finalyearproject.R;
 import com.example.finalyearproject.adapter.WishListAdapter;
@@ -59,5 +61,7 @@ public class Admin_Wishlist extends AppCompatActivity {
             public void onCancelled(@NonNull DatabaseError error) {
             }
         });
+
+
     }
 }

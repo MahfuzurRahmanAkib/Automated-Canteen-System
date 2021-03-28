@@ -6,6 +6,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
 
 import com.example.finalyearproject.model.ReviewModel;
 import com.example.finalyearproject.adapter.ReviewAdapter;
@@ -21,6 +24,7 @@ import java.util.ArrayList;
 public class Admin_Check_Feedback extends AppCompatActivity {
 
     private RecyclerView recyclerView;
+    private Button deleteFeedback;
 
     private FirebaseDatabase db = FirebaseDatabase.getInstance();
     private DatabaseReference root = db.getReference().child("User_review");
@@ -34,6 +38,8 @@ public class Admin_Check_Feedback extends AppCompatActivity {
         setContentView(R.layout.activity_admin__check__feedback);
 
         this.setTitle("Check FeedBack");
+
+        deleteFeedback = findViewById(R.id.delete_review_Id);
 
         recyclerView = findViewById(R.id.recycler_review_Id);
         recyclerView.setHasFixedSize(true);
@@ -59,5 +65,17 @@ public class Admin_Check_Feedback extends AppCompatActivity {
 
             }
         });
+
+        deleteFeedback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                /*DatabaseReference databaseReference;
+                databaseReference = FirebaseDatabase.getInstance().getReference().child("User_review");
+                databaseReference.removeValue();*/
+
+                Toast.makeText(Admin_Check_Feedback.this,"Kaj Baki Ase",Toast.LENGTH_SHORT).show();
+            }
+        });
     }
+
 }

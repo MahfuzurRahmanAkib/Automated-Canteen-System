@@ -1,9 +1,9 @@
 package com.example.finalyearproject.model;
 
 public class WishListModel {
-    String wishText;
+    String text;
 
-    public String getWishText() {
-        return wishText;
+    public String getText() {
+        return text;
     }
 }

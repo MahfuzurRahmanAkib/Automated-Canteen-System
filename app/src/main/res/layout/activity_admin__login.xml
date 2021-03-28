@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background_gradiant"
     android:orientation="vertical"
+    android:weightSum="20"
     tools:context=".Admin.Admin_Login">
 
     <TextView
@@ -23,10 +24,13 @@
     <EditText
         android:id="@+id/admin_Username_Id"
         style="@style/design_1"
+        android:layout_weight="1"
+        android:height="50dp"
         android:background="@drawable/custom_edit_text"
         android:drawableLeft="@drawable/ic__admin_name"
         android:drawablePadding="15dp"
         android:hint="Admin Name"
+        android:singleLine="true"
         android:textColorHint="@color/black" />
 
     <TextView
@@ -43,10 +47,12 @@
     <EditText
         android:id="@+id/admin_password_Id"
         style="@style/design_1"
+        android:layout_weight="1"
         android:background="@drawable/custom_edit_text"
         android:drawableLeft="@drawable/ic_password"
         android:drawablePadding="15dp"
         android:hint="@string/password"
+        android:inputType="textPassword"
         android:textColorHint="@color/black" />
 
     <Button

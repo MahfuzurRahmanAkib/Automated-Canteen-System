@@ -35,9 +35,9 @@ public class AvailableFoodListAdapter extends RecyclerView.Adapter<AvailableFood
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         AvailableFoodModel model = a_f_List.get(position);
 
-        holder.canteenName.setText(model.getCanteenName());
-        holder.food_name.setText(model.getFood_name());
-        holder.price.setText(model.getPrice());
+        holder.canteen_Name.setText(model.getAvailableCanteen());
+        holder.food_name.setText(model.getAvailableName());
+        holder.price.setText(model.getAvailablePrice());
 
     }
 
@@ -47,12 +47,12 @@ public class AvailableFoodListAdapter extends RecyclerView.Adapter<AvailableFood
     }
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
-        TextView canteenName, food_name, price;
+        TextView canteen_Name, food_name, price;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            canteenName = itemView.findViewById(R.id.available_Canteen_name_Id);
+            canteen_Name = itemView.findViewById(R.id.available_Canteen_name_Id);
             food_name = itemView.findViewById(R.id.available_food_name_Id);
             price = itemView.findViewById(R.id.available_Price_Id);
 
