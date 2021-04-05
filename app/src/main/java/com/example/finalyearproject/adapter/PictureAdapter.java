@@ -40,6 +40,7 @@ public class PictureAdapter extends RecyclerView.Adapter<PictureAdapter.MyViewHo
         holder.foodName.setText(model.getimageName());
         Picasso.with(context)
                 .load(model.getImageUrl())
+                .placeholder(R.mipmap.ic_launcher_round)
                 .fit()
                 .centerCrop()
                 .into(holder.foodPicture);

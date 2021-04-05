@@ -31,15 +31,16 @@
     <ImageView
         android:id="@+id/imageView_Id"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
-        android:layout_weight="2"
+        android:layout_weight="1.5"
         android:background="@drawable/image_drawable" />
 
     <Button
         android:id="@+id/saveImage_Id"
         style="@style/design_1"
+        android:layout_marginTop="5dp"
         android:background="@drawable/custom_button"
         android:text="Save Image" />
 

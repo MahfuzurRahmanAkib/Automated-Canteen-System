@@ -1,17 +1,17 @@
 package com.example.finalyearproject.model;
 
 public class AvailableFoodModel {
-    String availableCanteen, availableName, availablePrice;
+    String food_name, price, canteen_Name;
 
-    public String getAvailableCanteen() {
-        return availableCanteen;
+    public String getfood_name() {
+        return food_name;
     }
 
-    public String getAvailableName() {
-        return availableName;
+    public String getPrice() {
+        return price;
     }
 
-    public String getAvailablePrice() {
-        return availablePrice;
+    public String getcanteen_Name() {
+        return canteen_Name;
     }
 }

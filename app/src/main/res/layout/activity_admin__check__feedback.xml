@@ -12,6 +12,7 @@
     <Button
         android:id="@+id/delete_review_Id"
         style="@style/design_1"
+        android:layout_marginTop="10dp"
         android:background="@drawable/custom_button"
         android:text="Clear All Review"
         android:textAllCaps="false" />

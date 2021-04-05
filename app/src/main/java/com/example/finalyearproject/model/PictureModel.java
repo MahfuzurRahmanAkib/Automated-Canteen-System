@@ -1,13 +1,13 @@
 package com.example.finalyearproject.model;
 
 public class PictureModel {
-    String imageName, imageUrl;
+    String imageName, imageUri;
 
     public String getimageName() {
         return imageName;
     }
 
     public String getImageUrl() {
-        return imageUrl;
+        return imageUri;
     }
 }
