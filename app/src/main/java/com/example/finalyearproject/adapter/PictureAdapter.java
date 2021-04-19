@@ -37,7 +37,7 @@ public class PictureAdapter extends RecyclerView.Adapter<PictureAdapter.MyViewHo
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
 
         PictureModel model = pictureList.get(position);
-        holder.foodName.setText(model.getimageName());
+        holder.foodName.setText(model.getImageName());
         Picasso.with(context)
                 .load(model.getImageUrl())
                 .placeholder(R.mipmap.ic_launcher_round)

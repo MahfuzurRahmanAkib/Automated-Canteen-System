@@ -19,6 +19,7 @@ import android.widget.Toast;
 
 import com.example.finalyearproject.R;
 import com.example.finalyearproject.model.ImageModel;
+import com.example.finalyearproject.model.PictureModel;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
@@ -132,7 +133,11 @@ public class Admin_Picture extends AppCompatActivity implements View.OnClickList
                         public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                             Toast.makeText(Admin_Picture.this, "Image Uploaded Successfully!!", Toast.LENGTH_SHORT).show();
 
-                            ImageModel model = new ImageModel(imageName, taskSnapshot.getStorage().getDownloadUrl().toString());
+                            Task<Uri> urlTask = taskSnapshot.getStorage().getDownloadUrl();
+                            while (!urlTask.isSuccessful());
+                            Uri downloadUrl = urlTask.getResult();
+
+                            PictureModel model = new PictureModel(imageName, downloadUrl.toString());
                             //For Getting backup in DATABASE REFERENCE
                             String uploadID = databaseReference.push().getKey();
                             databaseReference.child(uploadID).setValue(model);

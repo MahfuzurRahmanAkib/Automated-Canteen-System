@@ -24,8 +24,8 @@ import com.google.firebase.auth.FirebaseAuth;
 public class User_Login extends AppCompatActivity implements View.OnClickListener {
     EditText user_username_ET, user_password_ET;
     TextView reset_password_ET;
-    private ProgressBar progressBar;
     Button user_create_Button;
+    private ProgressBar progressBar;
     private FirebaseAuth mAuth;
 
     @Override

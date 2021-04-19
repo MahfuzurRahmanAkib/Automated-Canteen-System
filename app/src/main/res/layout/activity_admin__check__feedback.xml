@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_gradiant"
-    android:gravity="center"
     android:orientation="vertical"
     tools:context=".Admin.Admin_Check_Feedback">
 
@@ -20,6 +19,8 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_review_Id"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:padding="5dp" />
+
+
 </LinearLayout>

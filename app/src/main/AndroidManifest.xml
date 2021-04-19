@@ -12,6 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalYearProject">
         <activity
+            android:name=".Admin.Admin_Available_Food_List_Edit"
+            android:parentActivityName=".Admin.Admin_Edit" />
+        <activity
+            android:name=".Admin.Admin_foodList_Edit"
+            android:parentActivityName=".Admin.Admin_Edit" />
+        <activity
+            android:name=".Admin.Admin_Picture_Edit"
+            android:parentActivityName=".Admin.Admin_Edit" />
+        <activity
+            android:name=".Admin.Admin_Edit"
+            android:parentActivityName=".Admin.Admin_Activity" />
+        <activity
+            android:name=".Admin.Admin_Save"
+            android:parentActivityName=".Admin.Admin_Activity" />
+        <activity
             android:name=".Admin.Admin_Wishlist"
             android:parentActivityName=".Admin.Admin_Activity" />
         <activity
@@ -25,7 +40,7 @@
             android:parentActivityName=".User.User_Activity" />
         <activity
             android:name=".Admin.Admin_Available_Food_List"
-            android:parentActivityName=".Admin.Admin_Activity" />
+            android:parentActivityName=".Admin.Admin_Save" />
         <activity
             android:name=".User.User_About_Us"
             android:parentActivityName=".User.User_Activity" />
@@ -40,15 +55,14 @@
             android:parentActivityName=".User.User_Activity" />
         <activity
             android:name=".Admin.Admin_Picture"
-            android:parentActivityName=".Admin.Admin_Activity" />
+            android:parentActivityName=".Admin.Admin_Save" />
         <activity
             android:name=".Admin.Admin_foodList"
-            android:parentActivityName=".Admin.Admin_Activity" />
+            android:parentActivityName=".Admin.Admin_Save" />
         <activity
             android:name=".User.Forgot_Password"
             android:parentActivityName=".User.User_Login" />
-        <activity
-            android:name=".User.User_Activity"/>
+        <activity android:name=".User.User_Activity" />
         <activity android:name=".Admin.Admin_Activity" />
         <activity
             android:name=".Admin.Admin_Login"

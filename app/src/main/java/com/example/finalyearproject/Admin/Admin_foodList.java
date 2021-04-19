@@ -28,7 +28,6 @@ public class Admin_foodList extends AppCompatActivity implements View.OnClickLis
     private FirebaseDatabase db = FirebaseDatabase.getInstance();
     private DatabaseReference root = db.getReference().child("Regular_Food");
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

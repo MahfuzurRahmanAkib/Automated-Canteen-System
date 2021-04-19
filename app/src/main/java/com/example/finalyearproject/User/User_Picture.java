@@ -30,7 +30,6 @@ public class User_Picture extends AppCompatActivity {
     private PictureAdapter pictureAdapter;
     private List<PictureModel> pictureModelList;
     DatabaseReference databaseReference;
-    private ProgressBar progressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,8 +50,8 @@ public class User_Picture extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
 
                 for(DataSnapshot dataSnapshot : snapshot.getChildren()){
-                    PictureModel pictureModel = dataSnapshot.getValue(PictureModel.class);
-                    pictureModelList.add(pictureModel);
+                    PictureModel model = dataSnapshot.getValue(PictureModel.class);
+                    pictureModelList.add(model);
                 }
                 pictureAdapter = new PictureAdapter(User_Picture.this,pictureModelList);
                 recyclerView.setAdapter(pictureAdapter);

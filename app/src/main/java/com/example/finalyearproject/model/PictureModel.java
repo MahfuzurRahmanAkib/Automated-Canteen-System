@@ -1,13 +1,29 @@
 package com.example.finalyearproject.model;
 
 public class PictureModel {
-    String imageName, imageUri;
+    private String imageName, imageUrl;
 
-    public String getimageName() {
+    public PictureModel() {
+    }
+
+    public PictureModel(String imageName, String imageUrl) {
+        this.imageName = imageName;
+        this.imageUrl = imageUrl;
+    }
+
+    public String getImageName() {
         return imageName;
     }
 
+    public void setImageName(String imageName) {
+        this.imageName = imageName;
+    }
+
     public String getImageUrl() {
-        return imageUri;
+        return imageUrl;
+    }
+
+    public void setImageUri(String imageUrl) {
+        this.imageUrl = imageUrl;
     }
 }

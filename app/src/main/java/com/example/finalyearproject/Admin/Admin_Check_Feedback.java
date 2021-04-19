@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -53,7 +54,7 @@ public class Admin_Check_Feedback extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
 
-                for(DataSnapshot dataSnapshot : snapshot.getChildren()){
+                for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
                     ReviewModel reviewModel = dataSnapshot.getValue(ReviewModel.class);
                     list.add(reviewModel);
                 }
@@ -66,16 +67,21 @@ public class Admin_Check_Feedback extends AppCompatActivity {
             }
         });
 
+
         deleteFeedback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                /*DatabaseReference databaseReference;
-                databaseReference = FirebaseDatabase.getInstance().getReference().child("User_review");
-                databaseReference.removeValue();*/
+                if (v.getId() == R.id.delete_review_Id) {
+                    DatabaseReference childNode = FirebaseDatabase.getInstance().getReference().getRoot().child("User_review");
+                    childNode.removeValue();
 
-                Toast.makeText(Admin_Check_Feedback.this,"Kaj Baki Ase",Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(Admin_Check_Feedback.this, Admin_Activity.class);
+                    startActivity(intent);
+
+                    Toast.makeText(Admin_Check_Feedback.this, "All The Feedback Deleted...!!", Toast.LENGTH_SHORT).show();
+                }
             }
         });
-    }
 
+    }
 }

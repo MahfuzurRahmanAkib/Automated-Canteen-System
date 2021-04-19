@@ -7,39 +7,26 @@
     android:background="@drawable/background_gradiant"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".Admin.Admin_Activity">
+    tools:context=".Admin.Admin_Edit">
 
     <Button
-        android:id="@+id/admin_save_Id"
+        android:id="@+id/admin_picture_edit"
         style="@style/design_1"
         android:background="@drawable/custom_button"
-        android:text="Picture and Food List Save Section"
-        android:textAllCaps="false" />
-    <Button
-        android:id="@+id/admin_edit_Id"
-        style="@style/design_1"
-        android:background="@drawable/custom_button"
-        android:text="Picture and Food List Edit Section"
-        android:textAllCaps="false" />
-    <Button
-        android:id="@+id/admin_check_Feedback_Id"
-        style="@style/design_1"
-        android:background="@drawable/custom_button"
-        android:text="Feedback From User"
+        android:text="Pictures Of Canteen Edit"
         android:textAllCaps="false" />
 
     <Button
-        android:id="@+id/admin_check_wishlist_Id"
+        android:id="@+id/admin_food_list_edit"
         style="@style/design_1"
         android:background="@drawable/custom_button"
-        android:text="Wishlist From User"
+        android:text="Regular Food List Edit"
         android:textAllCaps="false" />
 
     <Button
-        android:id="@+id/admin_logout_Id"
+        android:id="@+id/admin_available_food_list_edit"
         style="@style/design_1"
         android:background="@drawable/custom_button"
-        android:text="Logout"
+        android:text="Available Food List Edit"
         android:textAllCaps="false" />
-
 </LinearLayout>
