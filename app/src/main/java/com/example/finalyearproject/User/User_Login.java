@@ -27,6 +27,8 @@ public class User_Login extends AppCompatActivity implements View.OnClickListene
     Button user_create_Button;
     private ProgressBar progressBar;
     private FirebaseAuth mAuth;
+    private Typeface typeface_1;
+    private Typeface typeface_2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +47,10 @@ public class User_Login extends AppCompatActivity implements View.OnClickListene
         user_username_ET = findViewById(R.id.user_username_Id);
         progressBar = findViewById(R.id.progressbar_Id);
         user_create_Button = findViewById(R.id.user_login_button_Id);
+
+        typeface_1 = Typeface.createFromAsset(getAssets(), "font/action_Man_Bold.ttf");
+        typeface_2 = Typeface.createFromAsset(getAssets(), "font/kaushanScript_Regular.otf");
+        user_create_Button.setTypeface(typeface_1);
 
         user_create_Button.setOnClickListener(this);
         reset_password_ET.setOnClickListener(this);

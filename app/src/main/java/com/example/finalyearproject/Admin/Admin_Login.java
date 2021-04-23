@@ -27,6 +27,7 @@ public class Admin_Login extends AppCompatActivity implements View.OnClickListen
     private Button admin_login;
     private ProgressBar progressBar;
     private TextView admin_TextView;
+    Typeface typeface_1;
     private int counter = 2;
 
     private FirebaseDatabase db = FirebaseDatabase.getInstance();
@@ -48,6 +49,9 @@ public class Admin_Login extends AppCompatActivity implements View.OnClickListen
         adminUserName = findViewById(R.id.admin_Username_Id);
         progressBar = findViewById(R.id.progressbar_Id);
         admin_TextView.setText("Attempt remaining =2 times");
+
+        typeface_1 = Typeface.createFromAsset(getAssets(), "font/action_Man_Bold.ttf");
+        admin_login.setTypeface(typeface_1);
 
         admin_login.setOnClickListener(this);
     }

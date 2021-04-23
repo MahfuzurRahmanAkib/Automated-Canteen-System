@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -19,6 +20,9 @@ import com.google.firebase.auth.FirebaseAuth;
 public class User_Activity extends AppCompatActivity implements View.OnClickListener {
     Button user_canteen, user_food_List, user_Available_Food_List;
     private FirebaseAuth mAuth;
+    private Typeface typeface_1;
+    private Typeface typeface_2;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +36,13 @@ public class User_Activity extends AppCompatActivity implements View.OnClickList
         user_canteen = findViewById(R.id.user_canteen_Id);
         user_food_List = findViewById(R.id.user_foodlist_Id);
         user_Available_Food_List = findViewById(R.id.user_available_foodlist_Id);
+
+        typeface_1 = Typeface.createFromAsset(getAssets(), "font/action_Man_Bold.ttf");
+        typeface_2 = Typeface.createFromAsset(getAssets(), "font/kaushanScript_Regular.otf");
+        user_canteen.setTypeface(typeface_1);
+        user_food_List.setTypeface(typeface_1);
+        user_Available_Food_List.setTypeface(typeface_1);
+
 
         user_food_List.setOnClickListener(this);
         user_canteen.setOnClickListener(this);

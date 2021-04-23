@@ -15,12 +15,11 @@ import com.example.finalyearproject.model.FoodModel;
 
 import java.util.ArrayList;
 
-public class FoodListAdapter extends RecyclerView.Adapter<FoodListAdapter.MyViewHolder> {
-
-    ArrayList<FoodModel> fList;
+public class FoodListEditAdapter extends RecyclerView.Adapter<FoodListEditAdapter.MyViewHolder> {
+    ArrayList<FoodEditModel> fList;
     Context context;
 
-    public FoodListAdapter(Context context, ArrayList<FoodModel> fList) {
+    public FoodListEditAdapter( Context context,ArrayList<FoodEditModel> fList) {
         this.fList = fList;
         this.context = context;
     }
@@ -29,12 +28,12 @@ public class FoodListAdapter extends RecyclerView.Adapter<FoodListAdapter.MyView
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(context).inflate(R.layout.sample_food_list, parent, false);
-        return new MyViewHolder(v);
+        return new FoodListEditAdapter.MyViewHolder(v);
     }
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        FoodModel model = fList.get(position);
+        FoodEditModel model = fList.get(position);
 
         holder.name.setText(model.getname());
         holder.price.setText(model.getprice());
@@ -42,13 +41,12 @@ public class FoodListAdapter extends RecyclerView.Adapter<FoodListAdapter.MyView
     }
 
     @Override
-    public int getItemCount() {
+    public int getItemCount()  {
         return fList.size();
     }
 
-    public static class MyViewHolder extends RecyclerView.ViewHolder {
+    public class MyViewHolder extends RecyclerView.ViewHolder {
         TextView name, price, description;
-
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 

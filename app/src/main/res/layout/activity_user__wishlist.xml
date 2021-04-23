@@ -9,10 +9,11 @@
     tools:context=".User.User_Wishlist">
 
     <TextView
+        android:id="@+id/text_wish_Id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Wish List for Admin"
+        android:text="Wishes for Admin"
         android:textSize="40sp"
         android:textStyle="bold" />
 
@@ -21,7 +22,7 @@
         android:layout_height="5dp"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"
-        android:background="@color/orange" />
+        android:background="@color/red" />
 
 
     <EditText

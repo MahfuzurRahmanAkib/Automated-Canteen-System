@@ -4,10 +4,12 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.finalyearproject.R;
@@ -21,6 +23,9 @@ import java.util.HashMap;
 public class User_Wishlist extends AppCompatActivity {
     private Button wishlist_submit;
     private EditText wishlist_editText;
+    private TextView textView;
+    private Typeface typeface_1;
+    private Typeface typeface_2;
 
     private FirebaseDatabase db = FirebaseDatabase.getInstance();
     private DatabaseReference root = db.getReference().child("User_wishlist");
@@ -32,11 +37,17 @@ public class User_Wishlist extends AppCompatActivity {
 
         wishlist_editText = findViewById(R.id.wishlist_EditText_Id);
         wishlist_submit = findViewById(R.id.wishlist_submit_button_Id);
+        textView = findViewById(R.id.text_wish_Id);
 
         this.setTitle("User Wish List");
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
+
+        typeface_1 = Typeface.createFromAsset(getAssets(), "font/action_Man_Bold.ttf");
+        typeface_2 = Typeface.createFromAsset(getAssets(), "font/kaushanScript_Regular.otf");
+        wishlist_submit.setTypeface(typeface_1);
+        textView.setTypeface(typeface_1);
 
         wishlist_submit.setOnClickListener(new View.OnClickListener() {
             @Override

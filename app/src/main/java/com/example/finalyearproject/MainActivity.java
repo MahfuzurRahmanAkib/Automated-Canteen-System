@@ -21,6 +21,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button user_Button, admin_Button;
     private AlertDialog.Builder alertDialogBuilder;
     private TextView register, login_TextView;
+    private Typeface typeface_1;
+    private Typeface typeface_2;
 
 
     @Override
@@ -39,13 +41,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         user_Button.setOnClickListener(this);
         register.setOnClickListener(this);
 
-//custom font
-        /*typeface_1 = Typeface.createFromAsset(getAssets(), "font/action_Man_Bold.ttf");
+
+        typeface_1 = Typeface.createFromAsset(getAssets(), "font/action_Man_Bold.ttf");
         typeface_2 = Typeface.createFromAsset(getAssets(), "font/kaushanScript_Regular.otf");
         user_Button.setTypeface(typeface_1);
         register.setTypeface(typeface_1);
         admin_Button.setTypeface(typeface_1);
-        login_TextView.setTypeface(typeface_2);*/
+        login_TextView.setTypeface(typeface_2);
     }
 
     @Override

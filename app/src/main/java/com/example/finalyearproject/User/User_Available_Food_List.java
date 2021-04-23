@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.graphics.Typeface;
 import android.os.Bundle;
 
 import com.example.finalyearproject.R;
@@ -20,6 +21,7 @@ import java.util.ArrayList;
 
 public class User_Available_Food_List extends AppCompatActivity {
     private RecyclerView recyclerView;
+    private Typeface typeface_1;
 
     private FirebaseDatabase db = FirebaseDatabase.getInstance();
     private DatabaseReference root = db.getReference().child("Available_Food");
