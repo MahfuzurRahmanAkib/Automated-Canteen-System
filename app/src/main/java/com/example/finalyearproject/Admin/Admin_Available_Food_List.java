@@ -72,9 +72,9 @@ public class Admin_Available_Food_List extends AppCompatActivity implements View
             @Override
             public void onComplete(@NonNull Task<Void> task) {
                 if (task.isSuccessful()) {
-                    Toast.makeText(Admin_Available_Food_List.this, "Data Updated successfully..!", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(Admin_Available_Food_List.this, Admin_Activity.class);
                     startActivity(intent);
+                    Toast.makeText(Admin_Available_Food_List.this, "Data Updated successfully..!", Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(Admin_Available_Food_List.this, " Unsuccessful..! Try Again", Toast.LENGTH_SHORT).show();
                 }

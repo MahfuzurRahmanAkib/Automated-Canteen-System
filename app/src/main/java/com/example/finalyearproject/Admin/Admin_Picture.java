@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.ContentResolver;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -36,17 +37,16 @@ import static android.view.View.VISIBLE;
 
 public class Admin_Picture extends AppCompatActivity implements View.OnClickListener {
 
+    private static final int Image_Request = 1;
+    Typeface typeface_1;
+    DatabaseReference databaseReference;
+    StorageReference storageReference;
     private Button chooseButton, saveButton;
     private EditText imageNameET;
     private ProgressBar progressBar;
     private ImageView imageView;
     private Uri imageUri;
     private StorageTask uploadTask;
-
-    DatabaseReference databaseReference;
-    StorageReference storageReference;
-
-    private static final int Image_Request = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,6 +66,10 @@ public class Admin_Picture extends AppCompatActivity implements View.OnClickList
         progressBar = findViewById(R.id.progressbar_Id);
         imageView = findViewById(R.id.imageView_Id);
         imageNameET = findViewById(R.id.imageNameEditText);
+
+        typeface_1 = Typeface.createFromAsset(getAssets(), "font/action_Man_Bold.ttf");
+        chooseButton.setTypeface(typeface_1);
+        saveButton.setTypeface(typeface_1);
 
         saveButton.setOnClickListener(this);
         chooseButton.setOnClickListener(this);
@@ -131,16 +135,20 @@ public class Admin_Picture extends AppCompatActivity implements View.OnClickList
                     .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                         @Override
                         public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+
                             Toast.makeText(Admin_Picture.this, "Image Uploaded Successfully!!", Toast.LENGTH_SHORT).show();
 
                             Task<Uri> urlTask = taskSnapshot.getStorage().getDownloadUrl();
-                            while (!urlTask.isSuccessful());
+                            while (!urlTask.isSuccessful()) ;
                             Uri downloadUrl = urlTask.getResult();
 
                             PictureModel model = new PictureModel(imageName, downloadUrl.toString());
                             //For Getting backup in DATABASE REFERENCE
                             String uploadID = databaseReference.push().getKey();
                             databaseReference.child(uploadID).setValue(model);
+
+                            Intent intent = new Intent(Admin_Picture.this, Admin_Activity.class);
+                            startActivity(intent);
                         }
                     }).addOnFailureListener(new OnFailureListener() {
                 @Override

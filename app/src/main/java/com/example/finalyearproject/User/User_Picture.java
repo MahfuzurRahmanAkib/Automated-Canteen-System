@@ -28,7 +28,7 @@ import java.util.List;
 public class User_Picture extends AppCompatActivity {
     private RecyclerView recyclerView;
     private PictureAdapter pictureAdapter;
-    private List<PictureModel> pictureModelList;
+    private ArrayList<PictureModel> pictureModelList;
     DatabaseReference databaseReference;
 
     @Override
@@ -55,7 +55,6 @@ public class User_Picture extends AppCompatActivity {
                 }
                 pictureAdapter = new PictureAdapter(User_Picture.this,pictureModelList);
                 recyclerView.setAdapter(pictureAdapter);
-
             }
 
             @Override

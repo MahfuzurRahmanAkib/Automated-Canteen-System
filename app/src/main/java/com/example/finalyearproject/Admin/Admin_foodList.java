@@ -75,9 +75,9 @@ public class Admin_foodList extends AppCompatActivity implements View.OnClickLis
             @Override
             public void onComplete(@NonNull Task<Void> task) {
                 if (task.isSuccessful()) {
-                    Toast.makeText(Admin_foodList.this, "Data Updated successfully..!", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(Admin_foodList.this, Admin_Activity.class);
                     startActivity(intent);
+                    Toast.makeText(Admin_foodList.this, "Data Updated successfully..!", Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(Admin_foodList.this, " Unsuccessful..! Try Again", Toast.LENGTH_SHORT).show();
                 }

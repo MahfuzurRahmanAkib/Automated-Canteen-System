@@ -10,11 +10,14 @@
     android:weightSum="3"
     tools:context=".Admin.Admin_Picture">
 
-    <Button
-        android:id="@+id/chooseImage_Id"
-        style="@style/design_1"
-        android:background="@drawable/custom_button"
-        android:text="Choose Image" />
+    <ImageView
+        android:id="@+id/imageView_Id"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:layout_weight="1.5"
+        android:background="@drawable/image_drawable" />
 
     <EditText
         android:id="@+id/imageNameEditText"
@@ -27,15 +30,11 @@
         android:hint="Enter Image Name"
         android:textColorHint="@color/black" />
 
-
-    <ImageView
-        android:id="@+id/imageView_Id"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_gravity="center"
-        android:layout_margin="5dp"
-        android:layout_weight="1.5"
-        android:background="@drawable/image_drawable" />
+    <Button
+        android:id="@+id/chooseImage_Id"
+        style="@style/design_1"
+        android:background="@drawable/custom_button"
+        android:text="Choose Image" />
 
     <Button
         android:id="@+id/saveImage_Id"
@@ -53,6 +52,5 @@
         android:layout_weight="0.25"
         android:background="@drawable/custom_button"
         android:visibility="gone" />
-
 
 </LinearLayout>

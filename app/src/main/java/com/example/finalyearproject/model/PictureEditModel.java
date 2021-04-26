@@ -1,12 +1,12 @@
 package com.example.finalyearproject.model;
 
-public class PictureModel {
+public class PictureEditModel {
     private String imageName, imageUrl;
 
-    public PictureModel() {
+    public PictureEditModel() {
     }
 
-    public PictureModel(String imageName, String imageUrl) {
+    public PictureEditModel(String imageName, String imageUrl) {
         this.imageName = imageName;
         this.imageUrl = imageUrl;
     }
