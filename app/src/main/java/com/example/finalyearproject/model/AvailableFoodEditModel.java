@@ -1,7 +1,9 @@
 package com.example.finalyearproject.model;
 
 public class AvailableFoodEditModel {
-    String food_name, price, canteen_Name;
+    public String food_name;
+    String price;
+    String canteen_Name;
 
     public String getfood_name() {
         return food_name;

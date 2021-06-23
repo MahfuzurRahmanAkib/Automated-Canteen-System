@@ -47,13 +47,11 @@ public class User_Wishlist extends AppCompatActivity {
         typeface_1 = Typeface.createFromAsset(getAssets(), "font/action_Man_Bold.ttf");
         typeface_2 = Typeface.createFromAsset(getAssets(), "font/kaushanScript_Regular.otf");
         wishlist_submit.setTypeface(typeface_1);
-        textView.setTypeface(typeface_1);
 
         wishlist_submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String text = wishlist_editText.getText().toString().trim();
-
 
                 if (text.isEmpty()) {
                     wishlist_editText.setError("Enter your wish");

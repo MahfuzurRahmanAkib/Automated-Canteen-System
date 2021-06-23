@@ -15,7 +15,6 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="50dp"
         android:drawablePadding="15dp"
-
         android:fontFamily="sans-serif-light"
         android:text="Food Name : "
         android:textColor="@color/black"

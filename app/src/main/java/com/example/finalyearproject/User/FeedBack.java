@@ -44,7 +44,6 @@ public class FeedBack extends AppCompatActivity implements View.OnClickListener 
 
         typeface_1 = Typeface.createFromAsset(getAssets(), "font/action_Man_Bold.ttf");
         feedback_Submit_Button.setTypeface(typeface_1);
-        textView.setTypeface(typeface_1);
 
         feedback_Submit_Button.setOnClickListener(this);
 

@@ -1,7 +1,8 @@
 package com.example.finalyearproject.model;
 
 public class PictureEditModel {
-    private String imageName, imageUrl;
+    public String imageName;
+    private String imageUrl;
 
     public PictureEditModel() {
     }

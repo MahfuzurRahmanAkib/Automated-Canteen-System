@@ -1,20 +1,27 @@
 package com.example.finalyearproject.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.finalyearproject.Admin.Admin_Activity;
+import com.example.finalyearproject.Admin.Admin_Edit;
 import com.example.finalyearproject.model.ReviewModel;
 import com.example.finalyearproject.R;;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
@@ -22,6 +29,9 @@ public class ReviewAdapter extends RecyclerView.Adapter<ReviewAdapter.MyViewHold
 
     ArrayList<ReviewModel> rList;
     Context context;
+
+    CharSequence text;
+    int duration = Toast.LENGTH_SHORT;
 
     public ReviewAdapter(Context context, ArrayList<ReviewModel> rList) {
         this.rList = rList;
@@ -41,15 +51,36 @@ public class ReviewAdapter extends RecyclerView.Adapter<ReviewAdapter.MyViewHold
         ReviewModel reviewModel = rList.get(position);
 
         holder.text.setText(reviewModel.getText());
-       /* holder.deleteButton.setOnClickListener(new View.OnClickListener() {
+
+        //delete
+        holder.delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               DatabaseReference databaseReference;
-                databaseReference = FirebaseDatabase.getInstance().getReference();//.child(rlist.getId());
-                databaseReference.removeValue();
-                Toast.makeText(context,"A review has been deleted..!!",Toast.LENGTH_SHORT).show();
+
+                FirebaseDatabase.getInstance().getReference().child("User_review").orderByChild("text")
+                        .equalTo(reviewModel.text).addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        for (DataSnapshot appleSnapshot : snapshot.getChildren()) {
+                            appleSnapshot.getRef().removeValue();
+
+                            Toast toast = Toast.makeText(context, "Review Deleted", duration);
+                            toast.show();
+
+                            Intent intent = new Intent(context, Admin_Activity.class);
+                            context.startActivity(intent);
+                        }
+                        notifyDataSetChanged();
+
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
             }
-        });*/
+        });
     }
 
     @Override
@@ -59,11 +90,13 @@ public class ReviewAdapter extends RecyclerView.Adapter<ReviewAdapter.MyViewHold
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
         TextView email, text;
+        ImageView delete;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
             text = itemView.findViewById(R.id.review_text_Id);
+            delete = itemView.findViewById(R.id.delete_review_Id);
         }
     }
 }

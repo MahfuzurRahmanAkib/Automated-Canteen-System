@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -48,6 +49,7 @@ public class FoodListAdapter extends RecyclerView.Adapter<FoodListAdapter.MyView
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
         TextView name, price, description;
+
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);

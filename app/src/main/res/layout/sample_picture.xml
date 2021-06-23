@@ -25,17 +25,34 @@
             android:layout_marginTop="10dp"
             android:scaleType="fitXY" />
 
-        <TextView
-            android:id="@+id/canteen_foodName_Id"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:background="@drawable/card_background"
-            android:fontFamily="sans-serif"
-            android:gravity="center_horizontal"
-            android:text="Food Name"
-            android:textAlignment="center"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
-    </LinearLayout>
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="5dp"
+                android:text="Picture Name :"
+                android:textColor="@color/purple_700"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/canteen_foodName_Id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card_background"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="Picture Name"
+                android:textAlignment="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
