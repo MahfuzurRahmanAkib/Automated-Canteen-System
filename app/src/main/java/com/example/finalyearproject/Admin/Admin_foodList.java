@@ -67,9 +67,9 @@ public class Admin_foodList extends AppCompatActivity implements View.OnClickLis
         }
         HashMap<String, String> regular_Food_Map = new HashMap<>();
 
-        regular_Food_Map.put("Name", regularName);
-        regular_Food_Map.put("Price", regularPrice);
-        regular_Food_Map.put("Description", regularDescription);
+        regular_Food_Map.put("name", regularName);
+        regular_Food_Map.put("price", regularPrice);
+        regular_Food_Map.put("description", regularDescription);
 
         root.push().setValue(regular_Food_Map).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override

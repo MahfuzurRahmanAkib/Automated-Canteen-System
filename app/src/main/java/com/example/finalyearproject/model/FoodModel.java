@@ -1,17 +1,17 @@
 package com.example.finalyearproject.model;
 
 public class FoodModel {
-    String Name, Price, Description;
+    String name, price, description;
 
     public String getname() {
-        return Name;
+        return name;
     }
 
     public String getprice() {
-        return Price;
+        return price;
     }
 
     public String getdescription() {
-        return Description;
+        return description;
     }
 }

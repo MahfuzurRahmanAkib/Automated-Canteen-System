@@ -66,8 +66,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:gravity="center"
+            android:gravity="right"
             android:orientation="horizontal">
 
             <ImageView
@@ -78,6 +77,4 @@
                 android:src="@drawable/delete" />
         </LinearLayout>
     </LinearLayout>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
