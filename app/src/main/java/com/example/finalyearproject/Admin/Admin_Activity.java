@@ -25,7 +25,8 @@ public class Admin_Activity extends AppCompatActivity implements View.OnClickLis
 
         mAuth = FirebaseAuth.getInstance();
 
-        this.setTitle("Admin Activity");
+        getSupportActionBar().hide();
+
 
         user_FeedBack = findViewById(R.id.admin_check_Feedback_Id);
         wishlist_Button = findViewById(R.id.admin_check_wishlist_Id);

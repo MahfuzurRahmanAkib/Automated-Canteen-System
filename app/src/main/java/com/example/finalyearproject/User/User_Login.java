@@ -37,10 +37,7 @@ public class User_Login extends AppCompatActivity implements View.OnClickListene
 
         mAuth = FirebaseAuth.getInstance();
 
-        this.setTitle("User Login");
-
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().hide();
 
         user_password_ET = findViewById(R.id.user_password_Id);
         reset_password_ET = findViewById(R.id.reset_password_Id);

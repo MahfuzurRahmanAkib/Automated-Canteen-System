@@ -8,6 +8,8 @@ import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -30,12 +32,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        getSupportActionBar().hide();
+      getSupportActionBar().hide();
 
         user_Button = findViewById(R.id.user_account_Id);
         register = findViewById(R.id.register_Id);
         admin_Button = findViewById(R.id.admin_account_Id);
-        login_TextView = findViewById(R.id.login_textView_Id);
 
         admin_Button.setOnClickListener(this);
         user_Button.setOnClickListener(this);
@@ -47,7 +48,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         user_Button.setTypeface(typeface_1);
         register.setTypeface(typeface_1);
         admin_Button.setTypeface(typeface_1);
-        login_TextView.setTypeface(typeface_2);
     }
 
     @Override

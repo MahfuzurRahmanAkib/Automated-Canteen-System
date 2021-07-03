@@ -18,7 +18,7 @@ import com.example.finalyearproject.R;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class User_Activity extends AppCompatActivity implements View.OnClickListener {
-    Button user_canteen, user_food_List, user_Available_Food_List;
+    Button user_canteen, user_food_List, user_Available_Food_List, user_offer;
     private FirebaseAuth mAuth;
     private Typeface typeface_1;
     private Typeface typeface_2;
@@ -36,6 +36,7 @@ public class User_Activity extends AppCompatActivity implements View.OnClickList
         user_canteen = findViewById(R.id.user_canteen_Id);
         user_food_List = findViewById(R.id.user_foodlist_Id);
         user_Available_Food_List = findViewById(R.id.user_available_foodlist_Id);
+        user_offer = findViewById(R.id.user_offer);
 
         typeface_1 = Typeface.createFromAsset(getAssets(), "font/action_Man_Bold.ttf");
         typeface_2 = Typeface.createFromAsset(getAssets(), "font/kaushanScript_Regular.otf");
@@ -46,6 +47,7 @@ public class User_Activity extends AppCompatActivity implements View.OnClickList
 
         user_food_List.setOnClickListener(this);
         user_canteen.setOnClickListener(this);
+        user_offer.setOnClickListener(this);
         user_Available_Food_List.setOnClickListener(this);
     }
 
@@ -95,12 +97,14 @@ public class User_Activity extends AppCompatActivity implements View.OnClickList
         if (v.getId() == R.id.user_canteen_Id) {
             Intent intent = new Intent(User_Activity.this, User_Picture.class);
             startActivity(intent);
-
         } else if (v.getId() == R.id.user_foodlist_Id) {
             Intent intent = new Intent(User_Activity.this, User_foodList.class);
             startActivity(intent);
         } else if (v.getId() == R.id.user_available_foodlist_Id) {
             Intent intent = new Intent(User_Activity.this, User_Available_Food_List.class);
+            startActivity(intent);
+        } else if (v.getId() == R.id.user_offer) {
+            Intent intent = new Intent(User_Activity.this, User_Offer_List.class);
             startActivity(intent);
         }
     }

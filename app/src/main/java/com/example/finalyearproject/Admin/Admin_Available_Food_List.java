@@ -23,7 +23,6 @@ public class Admin_Available_Food_List extends AppCompatActivity implements View
     EditText A_price, A_food, A_canteen;
     Button saveButton;
 
-
     private FirebaseDatabase db = FirebaseDatabase.getInstance();
     private DatabaseReference root = db.getReference().child("Available_Food");
 

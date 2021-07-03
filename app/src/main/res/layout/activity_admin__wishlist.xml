@@ -14,15 +14,4 @@
         android:layout_height="wrap_content"
         android:padding="5dp" />
 
-    <Button
-        android:id="@+id/delete_wishlist_Id"
-        style="@style/design_1"
-        android:layout_gravity="end"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/custom_button"
-        android:fontFamily="sans-serif-smallcaps"
-        android:text="Clear All Wish"
-        android:textAllCaps="false"
-        android:textStyle="bold" />
-
 </LinearLayout>

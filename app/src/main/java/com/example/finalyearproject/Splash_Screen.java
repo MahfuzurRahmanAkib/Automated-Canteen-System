@@ -1,4 +1,3 @@
-
 package com.example.finalyearproject;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,57 +7,46 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.os.Handler;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.example.finalyearproject.Admin.Admin_Activity;
 import com.example.finalyearproject.User.User_Activity;
 
 public class Splash_Screen extends AppCompatActivity {
-    private ProgressBar progressBar;
+    LottieAnimationView lottie;
     private TextView textView_1;
     private Typeface typeface_1;
-    int progress;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash__screen);
-        progressBar = findViewById(R.id.progressBarID);
 
-        setContentView(R.layout.activity_splash__screen);
-
-        progressBar = findViewById(R.id.progressBarID);
-        textView_1 = findViewById(R.id.textView_1_Id);
+        textView_1 = findViewById(R.id.textView_1_id);
+        lottie = findViewById(R.id.lottie);
 
         //custom font
-        typeface_1 = Typeface.createFromAsset(getAssets(), "font/alexBrush_Regular.ttf");
+        typeface_1 = Typeface.createFromAsset(getAssets(), "font/andada-bold.otf");
         textView_1.setTypeface(typeface_1);
-        Thread thread = new Thread(new Runnable() {
+
+        textView_1.animate().translationY(-1400).setDuration(2700).setStartDelay(0);
+
+        new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                doWork();
+                Intent i = new Intent(Splash_Screen.this, MainActivity.class);
+                startActivity(i);
                 startApp();
             }
-        });
-        thread.start();
-    }
-
-    //progress bar
-    public void doWork() {
-        for (progress = 20; progress <= 100; progress = progress + 30) {
-            try {
-                Thread.sleep(1000);
-                progressBar.setProgress(progress);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
+        }, 3500);
     }
 
     public void startApp() {
-
         SharedPreferences sharedPreferences = getSharedPreferences("userDetails", Context.MODE_PRIVATE);
 
         if (sharedPreferences.contains("email_Key") && sharedPreferences.contains("password_Key")) {

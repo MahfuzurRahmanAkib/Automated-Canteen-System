@@ -29,7 +29,8 @@ public class Forgot_Password extends AppCompatActivity implements View.OnClickLi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forgot__password);
         mAuth = FirebaseAuth.getInstance();
-        this.setTitle("Reset Password");
+
+        getSupportActionBar().hide();
 
         reset_button = findViewById(R.id.reset_button_Id);
         progressBar = findViewById(R.id.progressbar_Id);

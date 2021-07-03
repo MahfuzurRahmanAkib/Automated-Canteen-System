@@ -7,6 +7,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -25,7 +27,6 @@ import java.util.ArrayList;
 public class Admin_Check_Feedback extends AppCompatActivity {
 
     private RecyclerView recyclerView;
-    private Button deleteFeedback;
 
     private FirebaseDatabase db = FirebaseDatabase.getInstance();
     private DatabaseReference root = db.getReference().child("User_review");
@@ -39,8 +40,6 @@ public class Admin_Check_Feedback extends AppCompatActivity {
         setContentView(R.layout.activity_admin__check__feedback);
 
         this.setTitle("Check FeedBack");
-
-        deleteFeedback = findViewById(R.id.delete_review_Id);
 
         recyclerView = findViewById(R.id.recycler_review_Id);
         recyclerView.setHasFixedSize(true);
@@ -66,22 +65,26 @@ public class Admin_Check_Feedback extends AppCompatActivity {
 
             }
         });
+    }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.admin_menu_feedback, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
 
-        deleteFeedback.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (v.getId() == R.id.delete_review_Id) {
-                    DatabaseReference childNode = FirebaseDatabase.getInstance().getReference().getRoot().child("User_review");
-                    childNode.removeValue();
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId() == R.id.delete_feedback_menu_id) {
+            DatabaseReference childNode = FirebaseDatabase.getInstance().getReference().getRoot().child("User_review");
+            childNode.removeValue();
 
-                    Intent intent = new Intent(Admin_Check_Feedback.this, Admin_Activity.class);
-                    startActivity(intent);
+            Toast.makeText(Admin_Check_Feedback.this, "All The Feedback Deleted...!!", Toast.LENGTH_SHORT).show();
 
-                    Toast.makeText(Admin_Check_Feedback.this, "All The Feedback Deleted...!!", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
+            Intent intent = new Intent(Admin_Check_Feedback.this, Admin_Activity.class);
+            startActivity(intent);
 
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

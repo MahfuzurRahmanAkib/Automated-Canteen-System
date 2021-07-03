@@ -38,10 +38,8 @@ public class Admin_Login extends AppCompatActivity implements View.OnClickListen
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin__login);
-        this.setTitle("Admin Login");
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().hide();
 
         admin_login = findViewById(R.id.admin_login_Id);
         adminPassword = findViewById(R.id.admin_password_Id);

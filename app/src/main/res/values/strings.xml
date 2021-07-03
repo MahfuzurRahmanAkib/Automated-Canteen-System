@@ -22,4 +22,13 @@
     </string>
 
 
+    <string-array name="canteen_name">
+        <item>Permanent Canteen 1</item>
+        <item>Permanent Canteen 2</item>
+        <item>Permanent Canteen 3</item>
+        <item>Main Canteen 1</item>
+        <item>Main Canteen 2</item>
+        <item>Main Canteen 3</item>
+    </string-array>
+
 </resources>

@@ -32,9 +32,10 @@ public class Create_Account extends AppCompatActivity implements View.OnClickLis
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create__account);
-        this.setTitle("Create Account");
 
         mAuth = FirebaseAuth.getInstance();
+
+        getSupportActionBar().hide();
 
         create_Button = findViewById(R.id.create_Id);
         progressBar = findViewById(R.id.progressbar_Id);

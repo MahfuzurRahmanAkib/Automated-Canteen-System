@@ -11,7 +11,7 @@ import android.widget.Button;
 import com.example.finalyearproject.R;
 
 public class Admin_Edit extends AppCompatActivity implements View.OnClickListener{
-    public Button admin_canteen_picture, admin_food_List, admin_available_food;
+    public Button admin_canteen_picture, admin_food_List, admin_available_food,admin_offer_edit;
     Typeface typeface_1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +26,7 @@ public class Admin_Edit extends AppCompatActivity implements View.OnClickListene
         admin_canteen_picture = findViewById(R.id.admin_picture_edit);
         admin_food_List = findViewById(R.id.admin_food_list_edit);
         admin_available_food = findViewById(R.id.admin_available_food_list_edit);
+        admin_offer_edit = findViewById(R.id.admin_offer_edit);
 
         typeface_1 = Typeface.createFromAsset(getAssets(), "font/action_Man_Bold.ttf");
         admin_canteen_picture.setTypeface(typeface_1);
@@ -35,6 +36,7 @@ public class Admin_Edit extends AppCompatActivity implements View.OnClickListene
         admin_food_List.setOnClickListener(this);
         admin_canteen_picture.setOnClickListener(this);
         admin_available_food.setOnClickListener(this);
+        admin_offer_edit.setOnClickListener(this);
     }
 
     @Override
@@ -47,6 +49,9 @@ public class Admin_Edit extends AppCompatActivity implements View.OnClickListene
             startActivity(intent);
         } else if (v.getId() == R.id.admin_available_food_list_edit) {
             Intent intent = new Intent(Admin_Edit.this, Admin_Available_Food_List_Edit.class);
+            startActivity(intent);
+        }else if (v.getId() == R.id.admin_offer_edit) {
+            Intent intent = new Intent(Admin_Edit.this, Admin_Offer_Edit.class);
             startActivity(intent);
         }
     }
