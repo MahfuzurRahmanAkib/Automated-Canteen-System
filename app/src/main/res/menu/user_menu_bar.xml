@@ -3,16 +3,7 @@
 
     <item
         android:id="@+id/about_menu_id"
-        android:title="About Us"
-       />
-    <item
-        android:id="@+id/feedback_menu_id"
-        android:title="Feedback"
-        />
-    <item
-        android:id="@+id/wishlist_menu_id"
-        android:title="Wish List"
-        />
+        android:title="About Us" />
     <item
         android:id="@+id/logout_menu_id"
         android:title="Log Out" />

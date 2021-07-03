@@ -104,7 +104,7 @@
 
 
             <ImageView
-                android:id="@+id/delete_delete_Id"
+                android:id="@+id/delete_offer_Id"
                 android:layout_width="68dp"
                 android:layout_height="wrap_content"
                 android:clickable="true"

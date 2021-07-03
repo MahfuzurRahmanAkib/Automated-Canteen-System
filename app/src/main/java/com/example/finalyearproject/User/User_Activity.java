@@ -18,7 +18,7 @@ import com.example.finalyearproject.R;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class User_Activity extends AppCompatActivity implements View.OnClickListener {
-    Button user_canteen, user_food_List, user_Available_Food_List, user_offer;
+    Button user_canteen, user_food_List, user_Available_Food_List, user_offer,wishlist,feedback;
     private FirebaseAuth mAuth;
     private Typeface typeface_1;
     private Typeface typeface_2;
@@ -34,6 +34,8 @@ public class User_Activity extends AppCompatActivity implements View.OnClickList
         mAuth = FirebaseAuth.getInstance();
 
         user_canteen = findViewById(R.id.user_canteen_Id);
+        wishlist = findViewById(R.id.wishlist_id);
+        feedback = findViewById(R.id.user_feedback_Id);
         user_food_List = findViewById(R.id.user_foodlist_Id);
         user_Available_Food_List = findViewById(R.id.user_available_foodlist_Id);
         user_offer = findViewById(R.id.user_offer);
@@ -48,6 +50,8 @@ public class User_Activity extends AppCompatActivity implements View.OnClickList
         user_food_List.setOnClickListener(this);
         user_canteen.setOnClickListener(this);
         user_offer.setOnClickListener(this);
+        wishlist.setOnClickListener(this);
+        feedback.setOnClickListener(this);
         user_Available_Food_List.setOnClickListener(this);
     }
 
@@ -75,18 +79,11 @@ public class User_Activity extends AppCompatActivity implements View.OnClickList
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(intent);
-
-        } else if (item.getItemId() == R.id.feedback_menu_id) {
-            Intent intent = new Intent(getApplicationContext(), FeedBack.class);
-            startActivity(intent);
         } else if (item.getItemId() == R.id.about_menu_id) {
             Intent intent = new Intent(getApplicationContext(), User_About_Us.class);
             startActivity(intent);
         } else if (item.getItemId() == R.id.about_menu_id) {
             Intent intent = new Intent(getApplicationContext(), User_About_Us.class);
-            startActivity(intent);
-        } else if (item.getItemId() == R.id.wishlist_menu_id) {
-            Intent intent = new Intent(getApplicationContext(), User_Wishlist.class);
             startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
@@ -105,6 +102,12 @@ public class User_Activity extends AppCompatActivity implements View.OnClickList
             startActivity(intent);
         } else if (v.getId() == R.id.user_offer) {
             Intent intent = new Intent(User_Activity.this, User_Offer_List.class);
+            startActivity(intent);
+        }else if (v.getId() == R.id.wishlist_id) {
+            Intent intent = new Intent(User_Activity.this, User_Wishlist.class);
+            startActivity(intent);
+        }else if (v.getId() == R.id.user_feedback_Id) {
+            Intent intent = new Intent(User_Activity.this, FeedBack.class);
             startActivity(intent);
         }
     }

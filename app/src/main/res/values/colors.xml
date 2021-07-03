@@ -14,6 +14,8 @@
     <color name="sky_blue">#77B5FE</color>
     <color name="soft_blue">#96BCDE</color>
     <color name="dark_gray">#838383</color>
+    <color name="ball_blue">#21ABCD</color>
+    <color name="baby_blue">#89CFF0</color>
 
 
 </resources>
