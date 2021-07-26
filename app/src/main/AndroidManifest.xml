@@ -11,8 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalYearProject">
-        <activity android:name=".Admin.Admin_Offer_Edit"></activity>
-        <activity android:name=".Admin.Admin_Offer" />
+        <activity
+            android:name=".Admin.Admin_Offer_Edit"
+            android:parentActivityName=".Admin.Admin_Edit"/>
+        <activity
+            android:name=".Admin.Admin_Offer"
+            android:parentActivityName=".Admin.Admin_Save" />
         <activity
             android:name=".User.User_Offer_List"
             android:parentActivityName=".User.User_Activity" />

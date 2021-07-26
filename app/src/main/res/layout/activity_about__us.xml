@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_gradiant"
+    android:background="@color/smoke_white"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".User.User_About_Us">
@@ -39,7 +39,9 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="15dp"
         android:layout_marginRight="20dp"
+        android:fontFamily="sans-serif"
         android:text="@string/AboutUs_2"
+        android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="@color/black"
         android:textSize="20sp" />
@@ -72,8 +74,10 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="15dp"
         android:layout_marginRight="20dp"
+        android:fontFamily="sans-serif"
         android:gravity="center"
         android:text="@string/AboutUs_4"
+        android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="@color/black"
         android:textSize="15sp" />

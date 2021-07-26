@@ -38,7 +38,6 @@ import static android.view.View.VISIBLE;
 public class Admin_Picture extends AppCompatActivity implements View.OnClickListener {
 
     private static final int Image_Request = 1;
-    Typeface typeface_1;
     DatabaseReference databaseReference;
     StorageReference storageReference;
     private Button chooseButton, saveButton;
@@ -66,10 +65,6 @@ public class Admin_Picture extends AppCompatActivity implements View.OnClickList
         progressBar = findViewById(R.id.progressbar_Id);
         imageView = findViewById(R.id.imageView_Id);
         imageNameET = findViewById(R.id.imageNameEditText);
-
-        typeface_1 = Typeface.createFromAsset(getAssets(), "font/action_Man_Bold.ttf");
-        chooseButton.setTypeface(typeface_1);
-        saveButton.setTypeface(typeface_1);
 
         saveButton.setOnClickListener(this);
         chooseButton.setOnClickListener(this);

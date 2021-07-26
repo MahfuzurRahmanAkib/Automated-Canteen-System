@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/teal_700"
+    android:background="@color/floral_white"
     tools:context=".Admin.Admin_Login">
 
     <RelativeLayout
@@ -17,7 +17,7 @@
             android:id="@+id/v_one_login"
             android:layout_width="match_parent"
             android:layout_height="320dp"
-            android:background="@color/teal_200" />
+            android:background="@color/gost_white" />
 
         <RelativeLayout
             android:id="@+id/rl_two_login"
@@ -67,7 +67,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/white"
+            android:background="@color/seashell_white"
             android:gravity="center">
 
             <EditText
@@ -107,8 +107,10 @@
                 android:layout_marginRight="20dp"
                 android:background="@drawable/custom_button"
                 android:elevation="20dp"
+                android:fontFamily="sans-serif-smallcaps"
                 android:text="Log In"
-                android:textSize="17sp" />
+                android:textSize="17sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/admin_login_textView_Id"

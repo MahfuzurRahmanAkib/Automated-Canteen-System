@@ -24,7 +24,7 @@ public class FeedBack extends AppCompatActivity implements View.OnClickListener 
     EditText feedback_Username, feedback_EditText;
     Button feedback_Submit_Button;
     TextView textView;
-    private Typeface typeface_1;
+
     
     private FirebaseDatabase db = FirebaseDatabase.getInstance();
     private DatabaseReference root = db.getReference().child("User_review");
@@ -41,9 +41,6 @@ public class FeedBack extends AppCompatActivity implements View.OnClickListener 
         feedback_EditText = findViewById(R.id.feedback_EditText_Id);
         feedback_Submit_Button = findViewById(R.id.feedback_submit_button_Id);
         textView=findViewById(R.id.textview_review_Id);
-
-        typeface_1 = Typeface.createFromAsset(getAssets(), "font/action_Man_Bold.ttf");
-        feedback_Submit_Button.setTypeface(typeface_1);
 
         feedback_Submit_Button.setOnClickListener(this);
 

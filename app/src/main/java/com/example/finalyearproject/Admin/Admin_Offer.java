@@ -35,7 +35,11 @@ public class Admin_Offer extends AppCompatActivity implements View.OnClickListen
         o_old_price = findViewById(R.id.offer_old_Id);
         save_Offer_Button = findViewById(R.id.offer_save_Id);
 
-        this.setTitle("Available Food List");
+        this.setTitle("Save Today's Offer");
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+
 
         save_Offer_Button.setOnClickListener(this);
     }

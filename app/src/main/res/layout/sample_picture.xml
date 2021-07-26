@@ -7,8 +7,8 @@
     android:layout_margin="2dp"
     android:layout_marginLeft="10dp"
     android:layout_marginRight="10dp"
-    android:background="@drawable/card_background"
-    android:padding="10dp"
+    android:background="@color/seashell_white"
+
     app:cardCornerRadius="10dp"
     app:cardElevation="10dp">
 
@@ -21,24 +21,27 @@
         <ImageView
             android:id="@+id/canteen_foodPictures_Id"
             android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:layout_marginTop="10dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="5dp"
             android:scaleType="fitXY" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
+            android:background="@color/snow_white"
             android:orientation="horizontal"
             tools:ignore="MissingConstraints">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="@color/white"
                 android:fontFamily="sans-serif-smallcaps"
                 android:padding="5dp"
                 android:text="Picture Name :"
-                android:textColor="@color/purple_700"
+                android:textColor="@color/black"
                 android:textSize="15sp"
                 android:textStyle="bold" />
 
@@ -46,13 +49,16 @@
                 android:id="@+id/canteen_foodName_Id"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/card_background"
+                android:background="@color/white"
                 android:fontFamily="sans-serif"
                 android:gravity="center_horizontal"
+                android:padding="5dp"
                 android:text="Picture Name"
                 android:textAlignment="center"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-                android:textSize="15sp" />
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

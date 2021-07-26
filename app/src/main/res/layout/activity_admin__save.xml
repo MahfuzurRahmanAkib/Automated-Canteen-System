@@ -4,7 +4,7 @@
     android:id="@+id/GridLayout1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/teal_700"
+    android:background="@color/floral_white"
     tools:context=".Admin.Admin_Save">
 
     <RelativeLayout
@@ -16,7 +16,7 @@
             android:id="@+id/v_one_login"
             android:layout_width="match_parent"
             android:layout_height="240dp"
-            android:background="@color/teal_200" />
+            android:background="@color/gost_white" />
 
 
         <RelativeLayout
@@ -79,7 +79,8 @@
 
                     <RelativeLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="100dp">
+                        android:layout_height="100dp"
+                        android:background="@color/seashell_white">
 
                         <ImageView
                             android:id="@+id/image_1_Id"
@@ -119,7 +120,8 @@
 
                     <RelativeLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="100dp">
+                        android:layout_height="100dp"
+                        android:background="@color/seashell_white">
 
                         <ImageView
                             android:id="@+id/image_2_Id"
@@ -170,7 +172,8 @@
 
                     <RelativeLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="100dp">
+                        android:layout_height="100dp"
+                        android:background="@color/seashell_white">
 
                         <ImageView
                             android:id="@+id/image_3_Id"
@@ -210,7 +213,8 @@
 
                     <RelativeLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="100dp">
+                        android:layout_height="100dp"
+                        android:background="@color/seashell_white">
 
                         <ImageView
                             android:id="@+id/image_4_Id"
@@ -232,9 +236,9 @@
 
 
                         <Button
+                            android:id="@+id/admin_offer"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:id="@+id/admin_offer"
                             android:background="@android:color/transparent" />
 
                     </RelativeLayout>

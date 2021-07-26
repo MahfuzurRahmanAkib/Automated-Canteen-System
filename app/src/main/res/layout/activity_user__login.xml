@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/teal_700"
+    android:background="@color/floral_white"
     tools:context=".User.User_Login">
 
     <RelativeLayout
@@ -17,7 +17,7 @@
             android:id="@+id/v_one_login"
             android:layout_width="match_parent"
             android:layout_height="320dp"
-            android:background="@color/teal_200" />
+            android:background="@color/gost_white" />
 
         <RelativeLayout
             android:id="@+id/rl_two_login"
@@ -66,7 +66,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/white"
+            android:background="@color/seashell_white"
             android:gravity="center">
 
             <EditText
@@ -76,7 +76,7 @@
                 android:layout_marginLeft="18dp"
                 android:layout_marginRight="18dp"
                 android:background="@drawable/custom_edit_text"
-                android:drawableLeft="@drawable/ic__admin_name"
+                android:drawableLeft="@drawable/ic_email_24"
                 android:drawablePadding="5dp"
                 android:hint="Username"
                 android:padding="8dp" />
@@ -120,6 +120,7 @@
                 android:padding="10dp"
                 android:text="Forget password ?"
                 android:textStyle="bold"
+                android:fontFamily="sans-serif-smallcaps"
                 app:backgroundTint="@color/white" />
         </RelativeLayout>
     </androidx.cardview.widget.CardView>

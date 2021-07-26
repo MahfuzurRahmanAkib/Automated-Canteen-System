@@ -24,8 +24,6 @@ public class User_Wishlist extends AppCompatActivity {
     private Button wishlist_submit;
     private EditText wishlist_editText;
     private TextView textView;
-    private Typeface typeface_1;
-    private Typeface typeface_2;
 
     private FirebaseDatabase db = FirebaseDatabase.getInstance();
     private DatabaseReference root = db.getReference().child("User_wishlist");
@@ -43,10 +41,6 @@ public class User_Wishlist extends AppCompatActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-
-        typeface_1 = Typeface.createFromAsset(getAssets(), "font/action_Man_Bold.ttf");
-        typeface_2 = Typeface.createFromAsset(getAssets(), "font/kaushanScript_Regular.otf");
-        wishlist_submit.setTypeface(typeface_1);
 
         wishlist_submit.setOnClickListener(new View.OnClickListener() {
             @Override

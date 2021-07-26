@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_gradiant"
+android:background="@color/snow_white"
     android:orientation="vertical"
     tools:context=".User.FeedBack">
 
@@ -24,7 +24,7 @@
         android:layout_height="2dp"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"
-        android:background="@color/purple_700" />
+        android:background="@color/black" />
 
 
     <EditText
@@ -40,6 +40,8 @@
         android:id="@+id/feedback_submit_button_Id"
         style="@style/design_1"
         android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textStyle="bold"
         android:background="@drawable/custom_button"
         android:text="Submit" />
 

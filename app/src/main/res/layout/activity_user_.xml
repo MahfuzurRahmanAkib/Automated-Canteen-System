@@ -4,7 +4,7 @@
     android:id="@+id/GridLayout1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/teal_700"
+    android:background="@color/floral_white"
     tools:context=".User.User_Activity">
 
     <RelativeLayout
@@ -16,7 +16,7 @@
             android:id="@+id/v_one_login"
             android:layout_width="match_parent"
             android:layout_height="220dp"
-            android:background="@color/teal_200" />
+            android:background="@color/smoke_white" />
 
 
         <RelativeLayout
@@ -79,7 +79,8 @@
 
                     <RelativeLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="100dp">
+                        android:layout_height="100dp"
+                        android:background="@color/seashell_white">
 
                         <ImageView
                             android:id="@+id/image_1_Id"
@@ -119,7 +120,8 @@
 
                     <RelativeLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="100dp">
+                        android:layout_height="100dp"
+                        android:background="@color/seashell_white">
 
                         <ImageView
                             android:id="@+id/image_2_Id"
@@ -170,7 +172,8 @@
 
                     <RelativeLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="100dp">
+                        android:layout_height="100dp"
+                        android:background="@color/seashell_white">
 
                         <ImageView
                             android:id="@+id/image_3_Id"
@@ -210,7 +213,8 @@
 
                     <RelativeLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="100dp">
+                        android:layout_height="100dp"
+                        android:background="@color/seashell_white">
 
                         <ImageView
                             android:id="@+id/image_4_Id"
@@ -237,91 +241,95 @@
                             android:background="@android:color/transparent" />
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
-            </LinearLayout><LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:orientation="horizontal">
+            </LinearLayout>
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="0dp"
-                android:layout_height="100dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical"
-                app:cardCornerRadius="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="horizontal">
 
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="100dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:cardCornerRadius="10dp">
 
-                    <ImageView
-                        android:id="@+id/image_5_Id"
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_centerInParent="true"
-                        android:src="@drawable/feedback_icon" />
-
-                    <TextView
+                    <RelativeLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="50dp"
-                        android:layout_below="@+id/image_5_Id"
-                        android:layout_centerInParent="true"
-                        android:fontFamily="sans-serif-smallcaps"
-                        android:text="Feedback"
-                        android:textColor="@color/black"
-                        android:textSize="15sp"
-                        android:textStyle="bold" />
+                        android:layout_height="100dp"
+                        android:background="@color/seashell_white">
 
-                    <Button
-                        android:id="@+id/user_feedback_Id"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@android:color/transparent" />
-                </RelativeLayout>
-            </androidx.cardview.widget.CardView>
+                        <ImageView
+                            android:id="@+id/image_5_Id"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/feedback_icon" />
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="0dp"
-                android:layout_height="100dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical"
-                app:cardCornerRadius="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_below="@+id/image_5_Id"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:text="Feedback"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
 
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="100dp">
+                        <Button
+                            android:id="@+id/user_feedback_Id"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
 
-                    <ImageView
-                        android:id="@+id/image_6_Id"
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_centerInParent="true"
-                        android:src="@drawable/wish_icon" />
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:cardCornerRadius="10dp">
 
-                    <TextView
+                    <RelativeLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="50dp"
-                        android:layout_below="@+id/image_6_Id"
-                        android:layout_centerInParent="true"
-                        android:fontFamily="sans-serif-smallcaps"
-                        android:text="Wishes"
-                        android:textColor="@color/black"
-                        android:textSize="15sp"
-                        android:textStyle="bold" />
+                        android:layout_height="100dp"
+                        android:background="@color/seashell_white">
 
-                    <Button
-                        android:id="@+id/wishlist_id"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@android:color/transparent" />
-                </RelativeLayout>
-            </androidx.cardview.widget.CardView>
-        </LinearLayout>
+                        <ImageView
+                            android:id="@+id/image_6_Id"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/wish_icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_below="@+id/image_6_Id"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:text="Wishes"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/wishlist_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

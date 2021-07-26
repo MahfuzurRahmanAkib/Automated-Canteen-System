@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/teal_700"
+    android:background="@color/floral_white"
     tools:context=".User.Create_Account">
 
     <RelativeLayout
@@ -17,7 +17,7 @@
             android:id="@+id/v_one_login"
             android:layout_width="match_parent"
             android:layout_height="320dp"
-            android:background="@color/teal_200" />
+            android:background="@color/gost_white" />
 
         <RelativeLayout
             android:id="@+id/rl_two_login"
@@ -44,8 +44,8 @@
                 android:text="Create Account"
                 android:textAlignment="center"
                 android:textColor="@color/dark_gray"
-                android:textStyle="bold"
-                android:textSize="25sp" />
+                android:textSize="25sp"
+                android:textStyle="bold" />
 
         </RelativeLayout>
     </RelativeLayout>
@@ -66,7 +66,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/white"
+            android:background="@color/seashell_white"
             android:gravity="center">
 
             <EditText
@@ -106,6 +106,8 @@
                 android:layout_marginRight="20dp"
                 android:background="@drawable/custom_button"
                 android:elevation="20dp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-smallcaps"
                 android:text="Create"
                 android:textSize="17sp" />
         </RelativeLayout>

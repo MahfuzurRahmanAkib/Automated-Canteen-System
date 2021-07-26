@@ -24,7 +24,6 @@ public class Create_Account extends AppCompatActivity implements View.OnClickLis
     EditText create_username_ET, crete_password_ET;
     Button create_Button;
     private ProgressBar progressBar;
-    Typeface typeface_1;
     private FirebaseAuth mAuth;
 
 
@@ -41,9 +40,6 @@ public class Create_Account extends AppCompatActivity implements View.OnClickLis
         progressBar = findViewById(R.id.progressbar_Id);
         create_username_ET = findViewById(R.id.create_Username_Id);
         crete_password_ET = findViewById(R.id.create_password_Id);
-
-        typeface_1 = Typeface.createFromAsset(getAssets(), "font/action_Man_Bold.ttf");
-        create_Button.setTypeface(typeface_1);
 
         create_Button.setOnClickListener(this);
     }

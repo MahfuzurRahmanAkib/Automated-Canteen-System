@@ -14,7 +14,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/card_background"
+        android:background="@color/seashell_white"
         android:orientation="vertical">
 
         <LinearLayout
@@ -28,7 +28,7 @@
                 android:fontFamily="sans-serif-smallcaps"
                 android:padding="5dp"
                 android:text="Food Name :"
-                android:textColor="@color/purple_700"
+                android:textColor="@color/black"
                 android:textSize="17sp"
                 android:textStyle="bold" />
 
@@ -54,7 +54,7 @@
                 android:fontFamily="sans-serif-smallcaps"
                 android:padding="5dp"
                 android:text="Old Price : "
-                android:textColor="@color/purple_700"
+                android:textColor="@color/black"
                 android:textSize="17sp"
                 android:textStyle="bold" />
 
@@ -80,7 +80,7 @@
                 android:fontFamily="sans-serif-smallcaps"
                 android:padding="5dp"
                 android:text="New Price : "
-                android:textColor="@color/purple_700"
+                android:textColor="@color/black"
                 android:textSize="17sp"
                 android:textStyle="bold" />
 
