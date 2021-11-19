@@ -3,6 +3,7 @@ package com.example.finalyearproject.Admin;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
@@ -20,6 +21,7 @@ public class Admin_Save extends AppCompatActivity implements View.OnClickListene
         setContentView(R.layout.activity_admin__save);
 
         this.setTitle("Save All The Data");
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);

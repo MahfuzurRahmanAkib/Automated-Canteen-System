@@ -3,17 +3,19 @@
     package="com.example.finalyearproject">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/logo_2"
-        android:label="Automated Canteen"
+        android:icon="@drawable/logo"
+        android:label="Student Canteen"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalYearProject">
         <activity
             android:name=".Admin.Admin_Offer_Edit"
-            android:parentActivityName=".Admin.Admin_Edit"/>
+            android:parentActivityName=".Admin.Admin_Edit" />
         <activity
             android:name=".Admin.Admin_Offer"
             android:parentActivityName=".Admin.Admin_Save" />
@@ -77,10 +79,10 @@
         <activity android:name=".MainActivity" />
         <activity
             android:name=".Splash_Screen"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

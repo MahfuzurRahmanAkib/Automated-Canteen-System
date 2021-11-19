@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ProgressBar;
@@ -37,6 +38,7 @@ public class User_Picture extends AppCompatActivity {
         setContentView(R.layout.activity_user__picture);
 
         this.setTitle("Pictures Of Canteen");
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         recyclerView = findViewById(R.id.recycler_user_picture_Id);
         recyclerView.setHasFixedSize(true);

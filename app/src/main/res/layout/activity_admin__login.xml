@@ -30,7 +30,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-condensed"
-                android:text="AUTOMATED CANTEEN"
+                android:text="STUDENT CANTEEN"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="35sp"

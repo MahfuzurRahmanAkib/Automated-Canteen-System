@@ -17,15 +17,15 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="30dp"
         android:gravity="center"
-        android:text="Automated Canteen"
+        android:text="STUDENT CANTEEN"
         android:textColor="@color/black"
         android:textSize="35sp"
         android:textStyle="bold" />
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lottie"
-        android:layout_width="350dp"
-        android:layout_height="350dp"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
         android:layout_centerInParent="true"
         android:elevation="5dp"
         app:lottie_autoPlay="true"

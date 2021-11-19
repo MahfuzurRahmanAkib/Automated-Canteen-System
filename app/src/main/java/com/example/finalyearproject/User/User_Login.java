@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.ActivityInfo;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
@@ -36,6 +37,7 @@ public class User_Login extends AppCompatActivity implements View.OnClickListene
         mAuth = FirebaseAuth.getInstance();
 
         getSupportActionBar().hide();
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         user_password_ET = findViewById(R.id.user_password_Id);
         reset_password_ET = findViewById(R.id.reset_password_Id);
@@ -99,7 +101,6 @@ public class User_Login extends AppCompatActivity implements View.OnClickListene
                     editor.putString("email_Key", email);
                     editor.putString("password_Key", password);
                     editor.commit();
-
 
                     progressBar.setVisibility(View.GONE);
                     Intent intent = new Intent(getApplicationContext(), User_Activity.class);

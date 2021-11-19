@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -40,6 +41,7 @@ public class Admin_Check_Feedback extends AppCompatActivity {
         setContentView(R.layout.activity_admin__check__feedback);
 
         this.setTitle("Check FeedBack");
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         recyclerView = findViewById(R.id.recycler_review_Id);
         recyclerView.setHasFixedSize(true);

@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
@@ -33,12 +34,13 @@ public class Admin_foodList extends AppCompatActivity implements View.OnClickLis
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_food_list);
 
+        this.setTitle("Regular Food List");
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
         price = findViewById(R.id.regular_price_Id);
         food = findViewById(R.id.regular_food_Id);
         description = findViewById(R.id.regular_description_Id);
         saveButton = findViewById(R.id.regular_save_Id);
-
-        this.setTitle("Regular Food List");
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);

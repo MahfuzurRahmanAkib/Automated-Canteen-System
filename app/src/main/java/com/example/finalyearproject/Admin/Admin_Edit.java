@@ -3,6 +3,7 @@ package com.example.finalyearproject.Admin;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
@@ -10,15 +11,17 @@ import android.widget.Button;
 
 import com.example.finalyearproject.R;
 
-public class Admin_Edit extends AppCompatActivity implements View.OnClickListener{
-    public Button admin_canteen_picture, admin_food_List, admin_available_food,admin_offer_edit;
+public class Admin_Edit extends AppCompatActivity implements View.OnClickListener {
+    public Button admin_canteen_picture, admin_food_List, admin_available_food, admin_offer_edit;
     Typeface typeface_1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin__edit);
 
         this.setTitle("Edit All The Data");
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
@@ -50,7 +53,7 @@ public class Admin_Edit extends AppCompatActivity implements View.OnClickListene
         } else if (v.getId() == R.id.admin_available_food_list_edit) {
             Intent intent = new Intent(Admin_Edit.this, Admin_Available_Food_List_Edit.class);
             startActivity(intent);
-        }else if (v.getId() == R.id.admin_offer_edit) {
+        } else if (v.getId() == R.id.admin_offer_edit) {
             Intent intent = new Intent(Admin_Edit.this, Admin_Offer_Edit.class);
             startActivity(intent);
         }

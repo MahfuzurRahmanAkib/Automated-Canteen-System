@@ -3,6 +3,7 @@ package com.example.finalyearproject.User;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.pm.ActivityInfo;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
@@ -21,7 +22,6 @@ public class Forgot_Password extends AppCompatActivity implements View.OnClickLi
     private EditText reset_username_ET;
     private Button reset_button;
     private ProgressBar progressBar;
-    Typeface typeface_1;
     private FirebaseAuth mAuth;
 
     @Override
@@ -31,13 +31,11 @@ public class Forgot_Password extends AppCompatActivity implements View.OnClickLi
         mAuth = FirebaseAuth.getInstance();
 
         getSupportActionBar().hide();
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         reset_button = findViewById(R.id.reset_button_Id);
         progressBar = findViewById(R.id.progressbar_Id);
         reset_username_ET = findViewById(R.id.reset_username_Id);
-
-        typeface_1 = Typeface.createFromAsset(getAssets(), "font/action_Man_Bold.ttf");
-        reset_button.setTypeface(typeface_1);
 
         reset_button.setOnClickListener(this);
     }

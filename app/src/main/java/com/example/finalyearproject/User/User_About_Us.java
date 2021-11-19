@@ -2,6 +2,7 @@ package com.example.finalyearproject.User;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.pm.ActivityInfo;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.widget.TextView;
@@ -21,6 +22,8 @@ public class User_About_Us extends AppCompatActivity {
         setContentView(R.layout.activity_about__us);
 
         this.setTitle("About Us");
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 

@@ -30,7 +30,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-condensed"
-                android:text="AUTOMATED CANTEEN"
+                android:text="STUDENT CANTEEN"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="35sp"
@@ -106,6 +106,7 @@
                 android:layout_marginRight="20dp"
                 android:background="@drawable/custom_button"
                 android:elevation="20dp"
+                android:fontFamily="sans-serif-smallcaps"
                 android:text="Log In"
                 android:textSize="17sp" />
 
@@ -117,10 +118,10 @@
                 android:layout_marginTop="180dp"
                 android:background="@drawable/custom_button"
                 android:elevation="15dp"
+                android:fontFamily="sans-serif-smallcaps"
                 android:padding="10dp"
                 android:text="Forget password ?"
                 android:textStyle="bold"
-                android:fontFamily="sans-serif-smallcaps"
                 app:backgroundTint="@color/white" />
         </RelativeLayout>
     </androidx.cardview.widget.CardView>

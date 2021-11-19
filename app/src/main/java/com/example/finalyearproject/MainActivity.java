@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
@@ -23,8 +24,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button user_Button, admin_Button;
     private AlertDialog.Builder alertDialogBuilder;
     private TextView register, login_TextView;
-    private Typeface typeface_1;
-    private Typeface typeface_2;
 
 
     @Override
@@ -32,7 +31,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-      getSupportActionBar().hide();
+        getSupportActionBar().hide();
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         user_Button = findViewById(R.id.user_account_Id);
         register = findViewById(R.id.register_Id);
@@ -41,13 +41,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         admin_Button.setOnClickListener(this);
         user_Button.setOnClickListener(this);
         register.setOnClickListener(this);
-
-
-        typeface_1 = Typeface.createFromAsset(getAssets(), "font/action_Man_Bold.ttf");
-        typeface_2 = Typeface.createFromAsset(getAssets(), "font/kaushanScript_Regular.otf");
-        user_Button.setTypeface(typeface_1);
-        register.setTypeface(typeface_1);
-        admin_Button.setTypeface(typeface_1);
     }
 
     @Override

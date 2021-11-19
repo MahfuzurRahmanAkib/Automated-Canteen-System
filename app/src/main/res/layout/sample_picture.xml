@@ -40,7 +40,7 @@
                 android:background="@color/white"
                 android:fontFamily="sans-serif-smallcaps"
                 android:padding="5dp"
-                android:text="Picture Name :"
+                android:text="Food Name :"
                 android:textColor="@color/black"
                 android:textSize="15sp"
                 android:textStyle="bold" />

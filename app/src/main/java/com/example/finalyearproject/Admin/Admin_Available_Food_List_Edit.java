@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 
 import com.example.finalyearproject.R;
@@ -36,7 +37,9 @@ public class Admin_Available_Food_List_Edit extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin__available__food__list__edit);
+
         this.setTitle("Edit Available Food List");
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
@@ -46,7 +49,7 @@ public class Admin_Available_Food_List_Edit extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         list = new ArrayList<>();
-        adapter = new AvailableFoodEditAdapter(this,list);
+        adapter = new AvailableFoodEditAdapter(this, list);
         recyclerView.setAdapter(adapter);
 
         root.addValueEventListener(new ValueEventListener() {
@@ -59,6 +62,7 @@ public class Admin_Available_Food_List_Edit extends AppCompatActivity {
                 }
                 adapter.notifyDataSetChanged();
             }
+
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
             }

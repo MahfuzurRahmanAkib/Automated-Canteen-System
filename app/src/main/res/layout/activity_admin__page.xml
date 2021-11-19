@@ -30,7 +30,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="80dp"
                 android:fontFamily="sans-serif-condensed"
-                android:text="AUTOMATED CANTEEN"
+                android:text="STUDENT CANTEEN"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="35sp"
@@ -185,7 +185,7 @@
                             android:layout_below="@+id/image_3_Id"
                             android:layout_centerInParent="true"
                             android:fontFamily="sans-serif-smallcaps"
-                            android:text="Cheak Feedback"
+                            android:text="Check Feedback"
                             android:textColor="@color/black"
                             android:textSize="15sp"
                             android:textStyle="bold" />

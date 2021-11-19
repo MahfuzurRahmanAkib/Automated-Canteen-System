@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.ActivityInfo;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
@@ -39,6 +40,7 @@ public class Admin_Login extends AppCompatActivity implements View.OnClickListen
         setContentView(R.layout.activity_admin__login);
 
         getSupportActionBar().hide();
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         admin_login = findViewById(R.id.admin_login_Id);
         adminPassword = findViewById(R.id.admin_password_Id);
